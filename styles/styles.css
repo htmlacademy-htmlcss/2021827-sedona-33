@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.w") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -41,6 +41,8 @@ body {
 .main-index {
   color: #000000;
   background-color: #f2f2f2;
+}
+.tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -71,7 +73,7 @@ body {
 }
 
 /* Настоящий городок и мост дьявола*/
-.services-blue {
+.services-item-blue {
   background-color: #83b3d3;
   color: #ffffff;
 }
@@ -93,7 +95,7 @@ body {
   line-height: 21px;
 }
 /* Конец городу и мосту */
-/* Жилье, еда, сувениры */
+/* Жилье, еда, сувениры h4*/
 .headlines {
   font-weight: 700;
   color: #000000;
@@ -118,21 +120,25 @@ body {
   color: #333333;
 }
 /* Бэкграунды для <li> */
-.services-item-2 {
-  background: rgba(131, 179, 211, 0.12);
+.services-detail-item {
+  background-color: rgba(131, 179, 211, 0.12);
 }
-.services-item-4 {
-  background: rgba(131, 179, 211, 0.12);
+.services-detail .services-item-3 {
+  background-color: #ffffff;
+}
+.services-detail .services-item-4 {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-6 {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-7 {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .services-item-8 {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
+/* Бэкграунды */
 .hotel-search {
   text-align: center;
   background: #ffffff;
