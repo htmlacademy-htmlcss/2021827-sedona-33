@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.w") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+/* Pages */
+.page-header {
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #f2f2f2;
+  background-image: url("../images/backgrounds/backhround-header.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.main-inner {
+  font-family: "PT Sans" sans-serif;
+  background-color: #ffffff;
+}
+.services {
+  color: #333333;
+  background-color: #ffffff;
+  text-align: center;
+  font-style: normal;
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+}
+
+/* Настоящий городок и мост дьявола*/
+.services-blue {
+  background-color: #83b3d3;
+  color: #ffffff;
+}
+.services-title-blue {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.services-name-blue {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.services-description-blue {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/* Конец городу и мосту */
+/* Жилье, еда, сувениры */
+.headlines {
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* стилизую все <p> разом */
+.services-description {
+  font-weight: 400;
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+/* стилизую все спаны разом */
+.services-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+/* Бэкграунды для <li> */
+.services-item-2 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.services-item-4 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.services-item-6 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.services-item-7 {
+  background: rgba(131, 179, 211, 0.2);
+}
+.services-item-8 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.hotel-search {
+  text-align: center;
+  background: #ffffff;
+}
+.search {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.button-search {
+  background-color: #756257;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe {
+  background-image: url(../images/backgrounds/background-footer.jpg);
+  background-size: 1200px 411px;
+}
+.subscribe-tag {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.subscribe-description {
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.appointment-form .button {
+  background-color: #83b3d3;
+  width: 200px;
+  height: 60px;
+}
+
+/* catalog */
+
+.inner-header {
+  background-image: url(../images/backgrounds/catalog-background.jpg);
+  background-size: 1200px 408px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.inner-header-name {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+.breadcrumbs-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.catalog-filter-group {
+  color: #ffffff;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+.control-input {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+.button-ok {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #83b3d3;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.button-reset {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sorting-name {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sorting-select-control {
+  width: 287px;
+  height: 48px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.hotel-name {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+.hotel-price {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+.hotel-card-faq {
+  background-color: #756257;
+  width: 133px;
+  height: 37px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hotel-card-favorites {
+  background-color: #83b3d3;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hotel-card p {
+  background-color: #f2f2f2;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
