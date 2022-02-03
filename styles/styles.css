@@ -217,6 +217,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
+  text-decoration: none;
   color: #ffffff;
 }
 .catalog-filter-group {
@@ -263,8 +264,6 @@ body {
   color: #000000;
 }
 .sorting-select-control {
-  width: 287px;
-  height: 48px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -282,6 +281,9 @@ body {
   line-height: 31px;
   color: #000000;
 }
+.hotel-card-link {
+  text-decoration: none;
+}
 .hotel-name {
   font-weight: 400;
   font-style: normal;
@@ -296,6 +298,7 @@ body {
   line-height: 23px;
   color: #333333;
 }
+
 .hotel-card-faq {
   background-color: #756257;
   width: 133px;
@@ -334,4 +337,41 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+.button-loading {
+  background-color: #83b3d3;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.pagination-link {
+  background-color: #83b3d3;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+}
+.pagination-link-1 .pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+}
+.hotels-list {
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  font-size: 18px;
+  line-height: 23px;
 }
