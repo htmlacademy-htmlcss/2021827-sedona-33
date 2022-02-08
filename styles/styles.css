@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -27,7 +34,35 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+.navigation-list {
+  width: 345px;
+  margin: 0;
+  padding: 0;
+}
 
+.navigation-user {
+  max-width: 265px;
+  margin-left: auto;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+.header-logo {
+  width: 140px;
+  margin-right: 100px;
+  margin: 0 30 70px;
+  padding: 0;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -42,10 +77,15 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
+.tourist-conteiner {
+  flex-grow: 1;
+}
 .tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
 }
 .main-inner {
   background-color: #ffffff;
@@ -55,6 +95,15 @@ body {
   background-color: #ffffff;
   text-align: center;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.services-detail-item {
+  width: 400px;
+  height: 385px;
+  top: 1215px;
+  left: 840px;
 }
 
 .services h2 {
@@ -63,6 +112,7 @@ body {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 40px;
 }
 
 .advantages-description {
@@ -73,6 +123,9 @@ body {
 
 /* Настоящий городок и мост дьявола*/
 .services-item-blue {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
   background-color: #83b3d3;
   color: #ffffff;
   font-weight: 400;
@@ -86,6 +139,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
+}
+.services-item .services-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 /* span blue */
 .services-item-blue .services-name {
@@ -112,6 +172,7 @@ body {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 /* стилизую все спаны разом */
 .services-name {
@@ -121,29 +182,75 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
-/* Бэкграунды для <li> */
-.services-detail-item {
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.services-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  text-align: center;
+  height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
-.services-detail .services-item-3 {
+.double-div-div {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.services-detail .services-detail-item-2 {
   background-color: #ffffff;
 }
-.services-detail .services-item-4 {
+.services-detail .services-detail-item-3 {
   background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-6 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 400px;
+  height: 385px;
+  top: 1985px;
+  left: 40px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-7 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.2);
 }
 .services-item-8 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
 }
 /* Бэкграунды */
 .hotel-search {
   text-align: center;
   background: #ffffff;
+  width: 1200px;
+  height: 415px;
+  margin: 0;
+  padding: 0;
 }
 .search {
   font-weight: 700;
@@ -152,6 +259,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 40px;
 }
 
 .search-description {
@@ -173,7 +281,30 @@ body {
 
 .subscribe {
   background-image: url(../images/backgrounds/background-footer.jpg);
-  background-size: 1200px 411px;
+  width: 1200px;
+  height: 410px;
+}
+.subscribe-2 {
+  text-align: center;
+  height: 240px;
+}
+.subscribe-tag-2 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  margin: 0;
+}
+.subscribe-description-2 {
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
 }
 .subscribe-tag {
   font-weight: 700;
@@ -183,7 +314,9 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
+  margin: 0;
 }
+
 .subscribe-description {
   font-weight: 400;
   text-align: center;
@@ -199,8 +332,41 @@ body {
   height: 60px;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-social {
+  width: 200px;
+  margin-right: 130px;
+}
+.logo-link {
+  margin-left: auto;
+  max-width: 120px;
+}
+.contacts-number .contact-phone {
+  width: 720px;
+  height: 40px;
+  margin: 40px 55px 40px 60px;
+}
 /* catalog */
-
+.catalog-products {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 20px;
+}
+.catalog-filter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.catalog-column {
+  width: 1060px;
+}
+.sorting-select-control {
+}
 .inner-header {
   background-image: url(../images/backgrounds/catalog-background.jpg);
   background-size: 1200px 408px;
