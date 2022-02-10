@@ -14,33 +14,72 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  color: #000000;
   font-weight: 400;
   line-height: 21px;
-  background-color: #ffffff;
-}
-
-/* Pages */
-.page-header {
-  color: #000000;
   background-color: #f2f2f2;
 }
+/* див на весь body */
+.wrapper {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Pages */
+.page-header {
+}
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+.navigation-list {
+  width: 345px;
+  margin: 0;
+  padding: 0;
+}
 
+.navigation-user {
+  max-width: 265px;
+  margin-left: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+.header-logo {
+  width: 140px;
+  margin-right: 100px;
+  margin: 0 30 70px;
+  padding: 0;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
   font-weight: 700;
   text-align: center;
-  background-color: #f2f2f2;
   text-decoration: none;
 }
 
 .main-index {
-  color: #000000;
-  background-color: #f2f2f2;
+  flex-grow: 1;
+}
+.tourist-conteiner {
+  flex-grow: 1;
 }
 .tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
@@ -48,13 +87,18 @@ body {
   background-repeat: no-repeat;
 }
 .main-inner {
-  background-color: #ffffff;
 }
 .services {
   color: #333333;
-  background-color: #ffffff;
+
   text-align: center;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.services-detail-item {
+  width: 400px;
 }
 
 .services h2 {
@@ -63,6 +107,7 @@ body {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 40px;
 }
 
 .advantages-description {
@@ -73,8 +118,13 @@ body {
 
 /* Настоящий городок и мост дьявола*/
 .services-item-blue {
+  display: flex;
+  justify-content: space-between;
   background-color: #83b3d3;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* h3 blue */
@@ -83,20 +133,21 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
+}
+.services-item .services-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 /* span blue */
 .services-item-blue .services-name {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
 }
 /* p blue */
 .services-item-blue .services-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   color: #ffffff;
 }
 /* Конец городу и мосту */
@@ -115,6 +166,7 @@ body {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 /* стилизую все спаны разом */
 .services-name {
@@ -124,29 +176,64 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
-/* Бэкграунды для <li> */
-.services-detail-item {
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.services-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
-.services-detail .services-item-3 {
+.double-div-div {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.services-detail .services-detail-item-2 {
   background-color: #ffffff;
 }
-.services-detail .services-item-4 {
+.services-detail .services-detail-item-3 {
   background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-6 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 400px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
 }
 .services-item-7 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.2);
 }
 .services-item-8 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
 }
 /* Бэкграунды */
 .hotel-search {
   text-align: center;
-  background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .search {
   font-weight: 700;
@@ -155,6 +242,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 40px;
 }
 
 .search-description {
@@ -174,9 +262,29 @@ body {
   line-height: 36px;
 }
 
-.subscribe {
+.subscribe-1 {
   background-image: url(../images/backgrounds/background-footer.jpg);
-  background-size: 1200px 411px;
+}
+.subscribe-2 {
+  text-align: center;
+}
+.subscribe-tag-2 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  margin: 0;
+}
+.subscribe-description-2 {
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
 }
 .subscribe-tag {
   font-weight: 700;
@@ -186,7 +294,9 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
+  margin: 0;
 }
+
 .subscribe-description {
   font-weight: 400;
   text-align: center;
@@ -199,11 +309,40 @@ body {
 .appointment-form .button {
   background-color: #83b3d3;
   width: 200px;
-  height: 60px;
 }
 
+.page-footer {
+  display: flex;
+}
+.footer-social {
+  width: 200px;
+  margin-right: 130px;
+}
+.logo-link {
+  margin-left: auto;
+  max-width: 120px;
+}
+.contacts-number .contact-phone {
+  width: 720px;
+  margin: 40px 55px 40px 60px;
+}
 /* catalog */
-
+.catalog-products {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 20px;
+}
+.catalog-filter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.catalog-sorting {
+  width: 1060px;
+}
+.sorting-select-control {
+}
 .inner-header {
   background-image: url(../images/backgrounds/catalog-background.jpg);
   background-size: 1200px 408px;
@@ -215,6 +354,7 @@ body {
   font-style: normal;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
   color: #ffffff;
 }
 .breadcrumbs-link {
@@ -307,7 +447,6 @@ body {
 .hotel-card-faq {
   background-color: #756257;
   width: 133px;
-  height: 37px;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -320,7 +459,6 @@ body {
 .hotel-card-favorites {
   background-color: #83b3d3;
   width: 140px;
-  height: 37px;
   border-radius: 4px;
   font-weight: 700;
   font-style: normal;
@@ -333,7 +471,6 @@ body {
 .hotel-card p {
   background-color: #f2f2f2;
   width: 160px;
-  height: 37px;
   border-radius: 4px;
   font-weight: 400;
   font-style: normal;
