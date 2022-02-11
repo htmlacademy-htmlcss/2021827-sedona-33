@@ -28,6 +28,16 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* див на весь body */
 .wrapper {
   width: 1200px;
@@ -38,27 +48,37 @@ body {
   flex-direction: column;
 }
 /* Pages */
-.page-header {
-}
+
 .navigation {
   display: flex;
   width: 1060px;
   margin: 0 auto;
 }
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 345px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 265px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 264px;
   margin-left: auto;
+}
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 17px;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 83px;
 }
 .header-logo {
   width: 140px;
@@ -67,6 +87,8 @@ body {
   padding: 0;
 }
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -90,14 +112,16 @@ body {
 }
 .services {
   color: #333333;
-
   text-align: center;
   font-style: normal;
   margin: 0;
   padding: 0;
 }
-
+/* Планирую использовать под высоту h и p */
+.sedona {
+}
 .services-detail-item {
+  list-style-type: none;
   width: 400px;
 }
 
@@ -107,16 +131,31 @@ body {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 40px;
+  margin: 63px 240px 31px 240px;
 }
 
 .advantages-description {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
+  margin: 31px 240px 80px 240px;
 }
 
 /* Настоящий городок и мост дьявола*/
+.services-item {
+  list-style-type: none;
+}
+.double-div-div .services-title {
+  margin: 97px 30px;
+}
+.double-div-div .services-name {
+  display: block;
+  margin: 30px 75px;
+}
+.double-div-div .services-description {
+  display: block;
+  margin: 30px 90px 87px 90px;
+}
 .services-item-blue {
   display: flex;
   justify-content: space-between;
@@ -140,6 +179,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 98px 0px 29px;
+}
+.services-item .services-name {
+  display: block;
+  margin: 29px 75px 30px 75px;
+}
+.services-item .services-description {
+  margin: 30px 75px 108px 75px;
 }
 /* span blue */
 .services-item-blue .services-name {
@@ -158,6 +205,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 184px 75px 20px;
 }
 
 /* стилизую все <p> разом */
@@ -193,9 +241,14 @@ body {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .double-div-div {
   justify-content: space-between;
   text-align: center;
+}
+
+.services-detail .services-description {
+  margin: 20px 75px 79px;
 }
 
 .services-detail .services-detail-item-2 {
@@ -242,7 +295,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 40px;
+  margin: 91px 240px 29px 240px;
 }
 
 .search-description {
@@ -250,6 +303,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin: 29px 240px 71px 240px;
 }
 
 .button-search {
@@ -260,6 +314,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
+  margin: 56px 313px 93px 312px;
 }
 
 .subscribe-1 {
@@ -294,7 +349,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  margin: 0;
+  margin: 94px 240px 29px 240px;
 }
 
 .subscribe-description {
@@ -304,27 +359,57 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  margin: 29px 240px 46px 240px;
 }
-
+.appointment-form {
+  margin: 46px 200px 94px 200px;
+}
 .appointment-form .button {
   background-color: #83b3d3;
   width: 200px;
 }
 
 .page-footer {
+  margin: 0 auto;
   display: flex;
 }
 .footer-social {
-  width: 200px;
-  margin-right: 130px;
-}
-.logo-link {
-  margin-left: auto;
   max-width: 120px;
 }
-.contacts-number .contact-phone {
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 110px;
+  padding-right: 30px;
+  margin: 49px 61px 53px 72px;
+}
+.footer-social-item {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 18px;
+  min-height: 18px;
+  padding-right: 29px;
+}
+.logo-link {
+  max-width: 120px;
+}
+.footer-logo {
+  margin: 42px 72px 45px 53px;
+}
+.contacts-number {
+  display: block;
   width: 720px;
   margin: 40px 55px 40px 60px;
+  text-align: center;
+  align-items: center;
+}
+.contact-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
 }
 /* catalog */
 .catalog-products {
