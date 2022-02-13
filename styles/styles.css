@@ -627,6 +627,7 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
+/* кнопка */
 .button-loading {
   background-color: #83b3d3;
   font-weight: 700;
