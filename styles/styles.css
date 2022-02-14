@@ -77,14 +77,13 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
-  padding-bottom: 83px;
+}
+.page-header {
+  width: 1200px;
 }
 .header-logo {
   width: 140px;
-  margin-right: 100px;
-  margin: 0 30 70px;
-  padding: 0;
+  margin-right: 47px;
 }
 .navigation-link {
   display: block;
@@ -96,17 +95,47 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
+.navigation-search {
+  display: block;
+  padding: 20px 17px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.navigation-like {
+  display: block;
+  padding: 20px 17px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.navigation-here {
+  display: block;
+  padding: 20px 17px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
 .main-index {
   flex-grow: 1;
 }
-.tourist-conteiner {
-  flex-grow: 1;
-}
+
 .tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
   background-size: 100% auto;
+  padding-top: 51px;
+  padding-bottom: 83px;
   background-repeat: no-repeat;
+  flex-grow: 1;
 }
 .main-inner {
 }
@@ -119,10 +148,15 @@ body {
 }
 /* Планирую использовать под высоту h и p */
 .sedona {
+  padding-top: 63px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
 }
 .services-detail-item {
   list-style-type: none;
   width: 400px;
+  padding-top: 184px;
+  padding-bottom: 79px;
 }
 
 .services h2 {
@@ -131,30 +165,35 @@ body {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 63px 240px 31px 240px;
+  margin: 0px 240px 31px 240px;
 }
 
 .advantages-description {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  margin: 31px 240px 80px 240px;
+  margin: 31px 240px 0px 240px;
 }
 
 /* Настоящий городок и мост дьявола*/
 .services-item {
   list-style-type: none;
 }
-.double-div-div .services-title {
-  margin: 97px 30px;
+.services-item-three {
+  padding-top: 98px;
+  padding-bottom: 108px;
+  margin-bottom: 0px;
 }
-.double-div-div .services-name {
-  display: block;
-  margin: 30px 75px;
+.wrapper-item .services-title {
+  margin-bottom: 30px;
 }
-.double-div-div .services-description {
+.wrapper-item .services-name {
   display: block;
-  margin: 30px 90px 87px 90px;
+  margin-bottom: 30px;
+}
+.wrapper-item .services-description {
+  display: block;
+  margin: 0px 90px;
 }
 .services-item-blue {
   display: flex;
@@ -168,6 +207,7 @@ body {
 
 /* h3 blue */
 .services-item-blue .services-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -179,22 +219,24 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 98px 0px 29px;
+  /* margin: 98px 0px 29px; */
 }
 .services-item .services-name {
   display: block;
   margin: 29px 75px 30px 75px;
 }
 .services-item .services-description {
-  margin: 30px 75px 108px 75px;
+  /* margin: 30px 75px 0px 75px; */
 }
 /* span blue */
 .services-item-blue .services-name {
   text-transform: uppercase;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 /* p blue */
 .services-item-blue .services-description {
+  margin-top: 0px;
   color: #ffffff;
 }
 /* Конец городу и мосту */
@@ -205,7 +247,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 184px 75px 20px;
+  margin: 0px 75px 20px;
 }
 
 /* стилизую все <p> разом */
@@ -215,6 +257,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0px 75px;
 }
 /* стилизую все спаны разом */
 .services-name {
@@ -235,20 +278,20 @@ body {
 .services-detail {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.double-div-div {
-  justify-content: space-between;
+.wrapper-item {
+  padding-top: 97px;
+  padding-bottom: 87px;
   text-align: center;
 }
 
 .services-detail .services-description {
-  margin: 20px 75px 79px;
+  /* margin: 20px 75px 79px; */
 }
 
 .services-detail .services-detail-item-2 {
@@ -286,7 +329,8 @@ body {
 .hotel-search {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 .search {
   font-weight: 700;
@@ -295,7 +339,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 91px 240px 29px 240px;
+  margin: 0px 240px 29px 240px;
 }
 
 .search-description {
@@ -314,9 +358,12 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
-  margin: 56px 313px 93px 312px;
+  margin: 56px 313px 0px 312px;
 }
-
+.subscribe {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .subscribe-1 {
   background-image: url(../images/backgrounds/background-footer.jpg);
 }
@@ -349,7 +396,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  margin: 94px 240px 29px 240px;
+  margin: 0px 240px 29px 240px;
 }
 
 .subscribe-description {
@@ -362,7 +409,7 @@ body {
   margin: 29px 240px 46px 240px;
 }
 .appointment-form {
-  margin: 46px 200px 94px 200px;
+  margin: 46px 200px 0px 200px;
 }
 .appointment-form .button {
   background-color: #83b3d3;
