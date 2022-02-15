@@ -286,6 +286,8 @@ body {
 
 .wrapper-item {
   padding-top: 97px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 87px;
   text-align: center;
 }
@@ -368,6 +370,8 @@ body {
   background-image: url(../images/backgrounds/background-footer.jpg);
 }
 .subscribe-2 {
+  padding-top: 73px;
+  padding-bottom: 141px;
   text-align: center;
 }
 .subscribe-tag-2 {
@@ -378,13 +382,16 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: black;
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 46px;
 }
 .subscribe-description-2 {
   font-weight: 400;
   text-align: center;
   font-style: normal;
   font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 46px;
   line-height: 26px;
   color: black;
 }
@@ -474,9 +481,6 @@ body {
   width: 1200px;
 }
 
-.button-select-control {
-  display: flex;
-}
 .button-table {
   width: 48px;
   height: 48px;
@@ -496,8 +500,11 @@ body {
   width: 1200px;
 }
 .button-select-control {
-  margin: 44px 72px 53px 81px;
+  display: flex;
+  margin: 0px 72px 0px 81px;
   height: 48px;
+  padding-top: 44px;
+  padding-bottom: 53px;
 }
 .button-select-control .button-table {
   width: 48px;
@@ -520,8 +527,9 @@ body {
   background-repeat: no-repeat;
 }
 .inner-header-name {
-  margin: 0;
-  padding: 35px 601px 5px 71px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 35px 601px 0px 71px;
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
@@ -530,9 +538,10 @@ body {
 }
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 45px;
   color: #ffffff;
-  padding: 5px 1016px 45px 73px;
+  padding: 0px 1016px 0px 73px;
   list-style-type: none;
 }
 
@@ -586,7 +595,9 @@ body {
 
 .sorting-name {
   min-width: 337px;
-  margin: 50px 192px 56px 71px;
+  margin: 0px 192px 0px 71px;
+  padding-top: 50px;
+  padding-bottom: 56px;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -610,7 +621,7 @@ body {
 }
 .hotel-list {
   list-style-type: none;
-  padding: 0;
+  padding-top: 0px;
   margin-left: 72px;
 }
 .hotel-card-title {
@@ -692,7 +703,8 @@ body {
 .pagination-container {
   display: flex;
   background-color: #ffffff;
-  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 73px;
 }
 .pagination {
   display: flex;
