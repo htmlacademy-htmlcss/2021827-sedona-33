@@ -480,6 +480,9 @@ body {
   width: 195px;
   margin-right: 67px;
 }
+.catalog-filter-list {
+  color: #ffffff;
+}
 .catalog-sorting {
   width: 1200px;
 }
@@ -499,7 +502,7 @@ body {
   height: 48px;
 }
 .catalog-wrapper {
-  padding-top: 56px;
+  padding-top: 44px;
   padding-bottom: 56px;
   display: flex;
   width: 1200px;
@@ -509,7 +512,7 @@ body {
   display: flex;
   margin: 0px 72px 0px 81px;
   height: 48px;
-  padding-top: 44px;
+  padding-top: 22px;
   padding-bottom: 53px;
 }
 .button-select-control .button-table {
@@ -532,7 +535,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 35px;
-  padding-bottom: 83px;
+  padding-bottom: 44px;
 }
 .inner-header-name {
   margin-top: 0px;
@@ -571,6 +574,7 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
+  color: #ffffff;
   line-height: 26px;
 }
 
@@ -578,6 +582,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  color: #ffffff;
   line-height: 23px;
 }
 .button-ok {
@@ -585,6 +590,7 @@ body {
   height: 48px;
   grid-column: 4 / 5;
   font-weight: 700;
+  margin-top: 20px;
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
@@ -612,7 +618,7 @@ body {
 }
 .sorting-name {
   min-width: 337px;
-  margin: 0px 192px 0px 71px;
+  margin-left: 71px;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -624,7 +630,8 @@ body {
   display: flex;
   max-width: 287px;
   max-height: 48px;
-  margin: 0px 81px 0px 19px;
+  margin-left: 190px;
+  margin-top: 20px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -651,7 +658,6 @@ body {
   list-style-type: none;
   padding-top: 0px;
   margin-top: 0px;
-  margin-left: 72px;
   margin-right: 72px;
 }
 .hotel-card-title {
