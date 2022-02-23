@@ -95,8 +95,10 @@ body {
   text-decoration: none;
 }
 .navigation-search {
+  position: relative;
   display: block;
   padding: 20px 17px;
+  padding-right: 23px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -106,7 +108,9 @@ body {
 }
 .navigation-like {
   display: block;
+  position: relative;
   padding: 20px 17px;
+  padding-right: 18px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -116,13 +120,26 @@ body {
 }
 .navigation-here {
   display: block;
-  padding: 20px 17px;
+  width: 160px;
+  padding: 8px 15px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
+  background: #756257;
+  border-radius: 4px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  margin: 13px 23px 13px 0px;
+}
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 .main-index {
   flex-grow: 1;
@@ -231,9 +248,7 @@ body {
   display: block;
   margin: 29px 0 30px 0;
 }
-.services-item .services-description {
-  /* margin: 30px 75px 0px 75px; */
-}
+
 /* span blue */
 .services-item-blue .services-name {
   text-transform: uppercase;
@@ -242,9 +257,8 @@ body {
 }
 /* p blue */
 .services-item-blue .services-description {
-  margin-top: 0px;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin: 0 75px;
+  width: 220px;
   color: #ffffff;
 }
 /* Конец городу и мосту */
@@ -255,13 +269,15 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0px 75px 20px;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /* стилизую все <p> разом */
 .services-description {
   font-weight: 400;
-  max-width: 250px;
+  width: 250px;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
@@ -299,10 +315,6 @@ body {
   padding-right: 10px;
   padding-bottom: 87px;
   text-align: center;
-}
-
-.services-detail .services-description {
-  /* margin: 20px 75px 79px; */
 }
 
 .services-detail .services-detail-item-2 {
@@ -484,11 +496,12 @@ body {
   align-items: center;
   width: 195px;
   border: 0px;
-  padding-right: 67px;
+  margin-right: 67px;
   padding-left: 0px;
+  padding-right: 0px;
 }
 .catalog-filter-group:nth-child(2) {
-  padding-right: 110px;
+  margin-right: 110px;
 }
 .catalog-filter-list {
   color: #ffffff;
@@ -706,6 +719,7 @@ body {
   column-gap: 18px;
   row-gap: 50px;
   list-style-type: none;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
   width: 1056px;
