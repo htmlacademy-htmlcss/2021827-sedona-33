@@ -271,7 +271,7 @@ body {
   text-transform: uppercase;
   width: 250px;
   margin: auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* стилизую все <p> разом */
