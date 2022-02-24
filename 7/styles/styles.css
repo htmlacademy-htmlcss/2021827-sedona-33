@@ -66,7 +66,7 @@ body {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  max-width: 264px;
+  max-width: 290px;
   margin-left: auto;
 }
 .navigation-user .navigation-link {
@@ -79,7 +79,6 @@ body {
   margin: 0 auto;
 }
 .page-header {
-  width: 1200px;
 }
 .header-logo {
   width: 140px;
@@ -96,8 +95,10 @@ body {
   text-decoration: none;
 }
 .navigation-search {
+  position: relative;
   display: block;
   padding: 20px 17px;
+  padding-right: 23px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -107,7 +108,9 @@ body {
 }
 .navigation-like {
   display: block;
+  position: relative;
   padding: 20px 17px;
+  padding-right: 18px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -117,13 +120,26 @@ body {
 }
 .navigation-here {
   display: block;
-  padding: 20px 17px;
+  width: 160px;
+  padding: 8px 15px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
+  background: #756257;
+  border-radius: 4px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  margin: 13px 23px 13px 0px;
+}
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 .main-index {
   flex-grow: 1;
@@ -163,19 +179,21 @@ body {
 }
 
 .services h2 {
+  width: 720px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px 240px 31px 240px;
+  margin: 0px auto 31px auto;
 }
 
 .advantages-description {
+  width: 720px;
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  margin: 31px 240px 0px 240px;
+  margin: 31px auto 0px auto;
 }
 
 /* Настоящий городок и мост дьявола*/
@@ -228,11 +246,9 @@ body {
 }
 .services-item .services-name {
   display: block;
-  margin: 29px 75px 30px 75px;
+  margin: 29px 0 30px 0;
 }
-.services-item .services-description {
-  /* margin: 30px 75px 0px 75px; */
-}
+
 /* span blue */
 .services-item-blue .services-name {
   text-transform: uppercase;
@@ -241,7 +257,8 @@ body {
 }
 /* p blue */
 .services-item-blue .services-description {
-  margin-top: 0px;
+  margin: 0 75px;
+  width: 220px;
   color: #ffffff;
 }
 /* Конец городу и мосту */
@@ -252,12 +269,15 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0px 75px 20px;
+  width: 250px;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 /* стилизую все <p> разом */
 .services-description {
   font-weight: 400;
+  width: 250px;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
@@ -295,10 +315,6 @@ body {
   padding-right: 10px;
   padding-bottom: 87px;
   text-align: center;
-}
-
-.services-detail .services-description {
-  /* margin: 20px 75px 79px; */
 }
 
 .services-detail .services-detail-item-2 {
@@ -354,7 +370,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 29px 240px 71px 240px;
+  margin: 0px 240px 71px 240px;
 }
 
 .button-search {
@@ -365,7 +381,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
-  margin: 56px 313px 0px 312px;
+  margin: 0px 313px 0px 312px;
 }
 .subscribe {
   width: 1200px;
@@ -419,7 +435,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  margin: 29px 240px 46px 240px;
+  margin: 0px 240px 46px 240px;
 }
 .appointment-form {
   margin: 46px 200px 0px 200px;
@@ -430,19 +446,20 @@ body {
 }
 
 .page-footer {
+  padding: 0px 72px 0px 72px;
   display: flex;
-  width: 1200px;
+  align-items: center;
 }
 .footer-social {
-  max-width: 120px;
+  /* max-width: 120px; */
 }
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   width: 110px;
-  padding-right: 30px;
-  margin: 49px 61px 53px 72px;
+  /* padding-right: 30px; */
+  /* margin: 49px 61px 53px 72px; */
 }
 .footer-social-item {
   display: flex;
@@ -452,7 +469,7 @@ body {
   padding-right: 29px;
 }
 .logo-link {
-  max-width: 120px;
+  /* max-width: 120px; */
 }
 .footer-logo {
   margin: 42px 72px 45px 53px;
@@ -460,7 +477,7 @@ body {
 .contacts-number {
   display: block;
   width: 720px;
-  margin: 40px 53px 40px 60px;
+  /* margin: 40px 53px 40px 60px; */
   text-align: center;
   align-items: center;
 }
@@ -478,13 +495,22 @@ body {
 .catalog-filter-group {
   align-items: center;
   width: 195px;
+  border: 0px;
   margin-right: 67px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.catalog-filter-group:nth-child(2) {
+  margin-right: 110px;
 }
 .catalog-filter-list {
   color: #ffffff;
+  padding-left: 0px;
+  margin-top: 0px;
 }
 .catalog-sorting {
-  width: 1200px;
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .button-table {
@@ -505,15 +531,13 @@ body {
   padding-top: 44px;
   padding-bottom: 56px;
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  align-items: center;
 }
 .button-select-control {
   display: flex;
-  margin: 0px 72px 0px 81px;
+  padding-left: 81px;
   height: 48px;
-  padding-top: 22px;
-  padding-bottom: 53px;
+  flex-wrap: wrap;
 }
 .button-select-control .button-table {
   width: 48px;
@@ -536,11 +560,13 @@ body {
   background-repeat: no-repeat;
   padding-top: 35px;
   padding-bottom: 44px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 .inner-header-name {
   margin-top: 0px;
   margin-bottom: 5px;
-  padding: 0px 601px 0px 71px;
+  /* padding: 0px 601px 0px 71px; */
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
@@ -552,7 +578,8 @@ body {
   margin-top: 0px;
   margin-bottom: 45px;
   color: #ffffff;
-  padding: 0px 1016px 0px 73px;
+  /* padding: 0px 1016px 0px 73px; */
+  padding: 0px;
   list-style-type: none;
 }
 
@@ -567,6 +594,13 @@ body {
 }
 .catalog-filter-item {
   list-style-type: none;
+  height: 23px;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+.catalog-filter-item:nth-child(3) {
+  margin-bottom: 0px;
 }
 .catalog-filter-group {
 }
@@ -576,6 +610,7 @@ body {
   font-size: 20px;
   color: #ffffff;
   line-height: 26px;
+  margin-bottom: 30px;
 }
 
 .control-input {
@@ -591,6 +626,7 @@ body {
   grid-column: 4 / 5;
   font-weight: 700;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
@@ -610,28 +646,56 @@ body {
   width: 160px;
   height: 23px;
   color: #ffffff;
+  background: none;
+  border: none;
 }
 .filter {
-  display: grid;
-  grid-template-columns: 180px 180px 290px 160px;
-  column-gap: 67px;
+  display: flex;
 }
 .sorting-name {
   min-width: 337px;
-  margin-left: 71px;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
   line-height: 39px;
+  margin: 0;
   text-transform: uppercase;
   color: #000000;
+}
+.price-block {
+  width: 294px;
+  padding-right: 81px;
+}
+.price-block input {
+  width: 40px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.price-wrapper {
+  width: 287px;
+  display: flex;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: auto;
+}
+.price-wrapper label {
+  display: inline-block;
+  width: 144px;
+  height: 48px;
+}
+.price-block h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
 }
 .sorting-select-control {
   display: flex;
   max-width: 287px;
   max-height: 48px;
   margin-left: 190px;
-  margin-top: 20px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -643,7 +707,6 @@ body {
 }
 .hotel-card {
   display: flex;
-  padding: 20px;
   flex-direction: column;
 }
 .hotel-card-product {
@@ -652,13 +715,14 @@ body {
 }
 .hotel-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: 299px 299px 299px;
   column-gap: 18px;
-  row-gap: 10px;
+  row-gap: 50px;
   list-style-type: none;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-right: 72px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1056px;
 }
 .hotel-card-title {
   font-weight: 700;
