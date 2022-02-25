@@ -461,15 +461,12 @@ body {
   align-items: center;
 }
 .footer-social {
-  /* max-width: 120px; */
 }
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   width: 110px;
-  /* padding-right: 30px; */
-  /* margin: 49px 61px 53px 72px; */
 }
 .footer-social-item {
   display: flex;
@@ -479,15 +476,12 @@ body {
   padding-right: 29px;
 }
 .logo-link {
-  /* max-width: 120px; */
 }
 .footer-logo {
-  margin: 42px 72px 45px 53px;
 }
 .contacts-number {
   display: block;
   width: 720px;
-  /* margin: 40px 53px 40px 60px; */
   text-align: center;
   align-items: center;
 }
