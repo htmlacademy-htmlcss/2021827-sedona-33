@@ -65,13 +65,14 @@ body {
 
 .navigation-user {
   display: flex;
-  flex-wrap: wrap;
   max-width: 290px;
   margin-left: auto;
 }
 .navigation-user .navigation-link {
   min-width: 18px;
-  min-height: 17px;
+}
+.navigation-link {
+  position: relative;
 }
 
 .logo {
@@ -448,7 +449,11 @@ body {
 }
 .appointment-form {
   width: 800px;
+  display: flex;
   margin: 0 auto;
+}
+.appointment-form input {
+  width: 600px;
 }
 .appointment-form .button {
   background-color: #83b3d3;
@@ -463,16 +468,25 @@ body {
 
 /* Иконки соц в футере */
 /* ОШИБки с свг */
+
+.footer-social-link {
+  display: block;
+  height: 40px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
 .footer-social-tw {
-  background-image: url("../images/icons-logo/icon-twitter.svg");
+  background-image: url("../images/icons-logo/social-twitter.svg");
 }
 /* ошибка */
 .footer-social-fb {
-  background-image: url("../images/icons-logo/icon-facebook.svg");
+  background-image: url("../images/icons-logo/social-facebook.svg");
 }
 /* ошибка */
 .footer-social-yb {
-  background-image: url("../images/icons-logo/icon-youtube.svg");
+  background-image: url("../images/icons-logo/social-youtube.svg");
 }
 .footer-social-list {
   display: flex;
