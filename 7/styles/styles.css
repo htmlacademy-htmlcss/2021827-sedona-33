@@ -216,7 +216,6 @@ body {
 }
 .wrapper-item .services-description {
   display: block;
-  margin: 0px 90px;
 }
 .services-item-blue {
   display: flex;
@@ -230,11 +229,8 @@ body {
 
 /* h3 blue */
 .services-item-blue .services-title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+  margin: 0 auto 30px;
+  width: 400px;
   text-align: center;
 }
 .services-item .services-title {
@@ -242,22 +238,18 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  /* margin: 98px 0px 29px; */
-}
-.services-item .services-name {
-  display: block;
-  margin: 29px 0 30px 0;
 }
 
 /* span blue */
 .services-item-blue .services-name {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 250px;
   color: #ffffff;
 }
 /* p blue */
 .services-item-blue .services-description {
-  margin: 0 75px;
+  margin: 0 auto;
   width: 220px;
   color: #ffffff;
 }
@@ -270,19 +262,37 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   width: 250px;
-  margin: auto;
-  padding-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 /* стилизую все <p> разом */
-.services-description {
+.services-detail .services-description {
   font-weight: 400;
   width: 250px;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin: 0px 75px;
+  margin: 0 auto;
+}
+
+.services-item-three .services-description {
+  font-weight: 400;
+  width: 250px;
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+}
+.services-item-three .services-title {
+  width: 400px;
+  margin: 0 auto 29px;
+}
+.services-item-three .services-name {
+  display: block;
+  margin: 0 auto 30px;
+  width: 250px;
 }
 /* стилизую все спаны разом */
 .services-name {
@@ -446,20 +456,17 @@ body {
 }
 
 .page-footer {
-  padding: 0px 72px 0px 72px;
+  padding: 40px 72px 40px 72px;
   display: flex;
   align-items: center;
 }
 .footer-social {
-  /* max-width: 120px; */
 }
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   width: 110px;
-  /* padding-right: 30px; */
-  /* margin: 49px 61px 53px 72px; */
 }
 .footer-social-item {
   display: flex;
@@ -469,15 +476,12 @@ body {
   padding-right: 29px;
 }
 .logo-link {
-  /* max-width: 120px; */
 }
 .footer-logo {
-  margin: 42px 72px 45px 53px;
 }
 .contacts-number {
   display: block;
   width: 720px;
-  /* margin: 40px 53px 40px 60px; */
   text-align: center;
   align-items: center;
 }
