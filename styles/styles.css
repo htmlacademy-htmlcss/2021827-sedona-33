@@ -193,7 +193,7 @@ body {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  margin: 31px auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 
 /* Настоящий городок и мост дьявола*/
@@ -207,12 +207,8 @@ body {
   padding-bottom: 108px;
   margin-bottom: 0px;
 }
-.wrapper-item .services-title {
-  margin-bottom: 30px;
-}
 .wrapper-item .services-name {
   display: block;
-  margin-bottom: 30px;
 }
 .wrapper-item .services-description {
   display: block;
@@ -230,7 +226,6 @@ body {
 /* h3 blue */
 .services-item-blue .services-title {
   margin: 0 auto 30px;
-  width: 400px;
   text-align: center;
 }
 .services-item .services-title {
@@ -324,6 +319,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 87px;
+  width: 400px;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -364,6 +361,8 @@ body {
   margin: 0;
   padding-top: 91px;
   padding-bottom: 93px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .search {
   font-weight: 700;
@@ -372,7 +371,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0px 240px 29px 240px;
+  margin: 0px auto 29px auto;
 }
 
 .search-description {
@@ -380,7 +379,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 0px 240px 71px 240px;
+  margin: 0px auto 71px auto;
 }
 
 .button-search {
@@ -391,7 +390,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
-  margin: 0px 313px 0px 312px;
+  margin: 0px auto 0px auto;
 }
 .subscribe {
   width: 1200px;
@@ -435,7 +434,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  margin: 0px 240px 29px 240px;
+  margin: 0px auto 29px auto;
 }
 
 .subscribe-description {
@@ -448,7 +447,8 @@ body {
   margin: 0px 240px 46px 240px;
 }
 .appointment-form {
-  margin: 46px 200px 0px 200px;
+  width: 800px;
+  margin: 0 auto;
 }
 .appointment-form .button {
   background-color: #83b3d3;
@@ -460,13 +460,24 @@ body {
   display: flex;
   align-items: center;
 }
-.footer-social {
+
+/* Иконки соц в футере */
+.footer-social-tw {
+  background-image: url("images/icons-logo/icon-twitter.svg");
+}
+.footer-social-fb {
+  background-image: url("../images/icons-logo/icon-facebook.svg");
+}
+.footer-social-yb {
+  background-image: url("../images/icons-logo/icon-youtube.svg");
 }
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   width: 110px;
+  margin: 0;
+  padding: 0;
 }
 .footer-social-item {
   display: flex;
