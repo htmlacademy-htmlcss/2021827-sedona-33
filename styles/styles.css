@@ -444,7 +444,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  margin: 0px 240px 46px 240px;
+  margin: 0px auto 46px auto;
 }
 .appointment-form {
   width: 800px;
@@ -463,7 +463,7 @@ body {
 
 /* Иконки соц в футере */
 .footer-social-tw {
-  background-image: url("images/icons-logo/icon-twitter.svg");
+  background-image: url("../images/icons-logo/icon-twitter.svg");
 }
 .footer-social-fb {
   background-image: url("../images/icons-logo/icon-facebook.svg");
@@ -914,4 +914,11 @@ body {
   display: flex;
   margin-left: auto;
   margin-top: 45px;
+}
+.button {
+  display: block;
+  height: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
 }
