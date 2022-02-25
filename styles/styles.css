@@ -462,12 +462,15 @@ body {
 }
 
 /* Иконки соц в футере */
+/* ОШИБки с свг */
 .footer-social-tw {
   background-image: url("../images/icons-logo/icon-twitter.svg");
 }
+/* ошибка */
 .footer-social-fb {
   background-image: url("../images/icons-logo/icon-facebook.svg");
 }
+/* ошибка */
 .footer-social-yb {
   background-image: url("../images/icons-logo/icon-youtube.svg");
 }
