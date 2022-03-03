@@ -51,8 +51,24 @@ body {
 
 .navigation {
   display: flex;
+  align-items: flex-start;
   width: 1060px;
   margin: 0 auto;
+}
+.icon-number {
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  font-style: normal;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #7db54f;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  bottom: 55px;
+  color: #ffffff;
 }
 .navigation-list {
   display: flex;
@@ -132,28 +148,26 @@ body {
 .navigation-search {
   position: relative;
   display: block;
-  padding: 20px 17px;
-  padding-right: 23px;
   font-size: 20px;
   line-height: 26px;
+  width: 42px;
+  height: 66px;
   color: #000000;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
 }
-.navigation-like {
-  display: block;
+.navigation-heart {
+  width: 42px;
+  height: 66px;
+  padding-right: 20px;
   position: relative;
-  padding: 20px 17px;
-  padding-right: 18px;
-  font-size: 20px;
-  line-height: 26px;
+  display: block;
   color: #000000;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
 }
+
 .navigation-here {
+  box-sizing: border-box;
   display: block;
   width: 160px;
   padding: 11px 15px;
@@ -163,18 +177,12 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  margin: 13px 23px 13px 0px;
+  margin: 13px 0px 13px 0px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 .navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #000000;
 }
 .main-index {
@@ -450,6 +458,13 @@ body {
 }
 
 .button-search {
+  font: inherit;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #756257;
   color: #ffffff;
   border-radius: 10px;
@@ -457,10 +472,10 @@ body {
   display: block;
   font-weight: 700;
   text-transform: uppercase;
-  font-style: normal;
   font-size: 20px;
   line-height: 36px;
   margin: 0px auto 0px auto;
+  cursor: pointer;
 }
 .button-search:hover {
   background: #615048;
@@ -539,9 +554,13 @@ body {
   margin: 0 auto;
 }
 .appointment-form input {
+  font: inherit;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0px 19px 0px 22px;
   width: 600px;
   height: 60px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 .appointment-form:hover input {
   background-color: #e6e6e6;
@@ -555,13 +574,14 @@ body {
   background-color: #83b3d3;
   border-radius: 0px 10px 10px 0px;
   width: 200px;
+  border: none;
+  padding: 1px;
   color: #ffffff;
   font-size: 20px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
   font-weight: bold;
 }
 .button:hover {
@@ -702,7 +722,7 @@ body {
 }
 .card-grid-toggle:nth-child(3) {
   border: 2px solid #e6e6e6;
-  margin-right: 72px;
+  margin-right: 0;
 }
 .card-grid-toggle-current {
   border: 2px solid #000000;
@@ -830,11 +850,13 @@ body {
   margin-bottom: 20px;
   font-style: normal;
   font-size: 16px;
+  margin-top: 48px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   background-color: #83b3d3;
   border-radius: 4px;
+  border: none;
   color: #ffffff;
 }
 .button-ok:hover {
@@ -920,17 +942,27 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
+  margin-top: 0;
 }
 .sorting-select-control {
   display: flex;
-  max-width: 287px;
-  max-height: 48px;
+  width: 287px;
+  height: 48px;
   margin-left: 190px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+.sorting-control-number {
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 160px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -1126,6 +1158,8 @@ body {
   height: 60px;
   margin: 30px 290px;
   border-radius: 4px;
+  border: none;
+  padding: 17px 10px 17px 10px;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -1158,7 +1192,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  padding-top: 15px;
   font-size: 20px;
+  border-radius: 4px;
   line-height: 26px;
   align-items: center;
   align-content: center;
@@ -1187,6 +1223,7 @@ body {
   font-weight: 700;
   display: block;
   box-sizing: border-box;
+  padding-top: 15px;
   border-radius: 4px;
   width: 55px;
   height: 55px;
@@ -1204,13 +1241,14 @@ body {
   font-style: normal;
   color: #333333;
   font-size: 18px;
+  margin-right: 51px;
   line-height: 23px;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 */
 .sorting-control {
   display: flex;
   margin-left: auto;
-  margin-top: 45px;
+  margin-top: 36px;
 }
 .button {
   box-sizing: border-box;
