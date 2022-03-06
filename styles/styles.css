@@ -601,7 +601,6 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 200px;
   border: none;
-  padding: 1px;
   color: #ffffff;
   font-size: 20px;
   line-height: 26px;
@@ -752,7 +751,9 @@ body {
 }
 .card-grid-toggle:nth-child(3) {
   background-image: url("../images/icons-logo/mode-list\ 1.svg");
-  margin-right: 0;
+}
+.card-grid-toggle:nth-child(3n) {
+  margin-right: 0px;
 }
 .card-grid-toggle:hover {
   border: 2px solid #83b3d3;
@@ -1342,8 +1343,7 @@ body {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 26px;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .breadcrumbs-link-home:focus {
   border: 3px solid #83b3d3;
@@ -1357,18 +1357,18 @@ body {
 .breadcrumbs-item {
   box-sizing: border-box;
   position: relative;
+  padding-right: 15px;
+  margin-right: 10px;
 }
-.breadcrumbs-item:nth-child(1)::before {
+.breadcrumbs-item:not(:last-child)::before {
   position: absolute;
   content: url("../images/icons-logo/nav-arrow.svg");
-  color: rgba(255, 255, 255, 1);
-  padding-top: 14px;
   background-repeat: no-repeat;
   background-position: center;
-  display: block;
   width: 5px;
-  bottom: 3px;
-  left: 24px;
+  height: 15px;
+  bottom: 7px;
+  right: 0;
 }
 .breadcrumbs-item:last-of-type {
   box-sizing: border-box;
