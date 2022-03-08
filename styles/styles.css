@@ -737,17 +737,16 @@ body {
   background-color: #ffffff;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
+  margin-right: 8px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-grid-toggle:nth-child(1) {
   background-image: url("../images/icons-logo/mode-tile.svg");
-  margin-right: 8px;
 }
 .card-grid-toggle:nth-child(2) {
   background-image: url("../images/icons-logo/mode-slideshow\ 1.svg");
-  margin-right: 8px;
 }
 .card-grid-toggle:nth-child(3) {
   background-image: url("../images/icons-logo/mode-list\ 1.svg");
@@ -943,23 +942,42 @@ body {
   margin-right: 81px;
 }
 .price-block input {
-  width: 40px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
   border: none;
   outline: none;
   background: none;
 }
+
 .price-wrapper {
   width: 287px;
   display: flex;
+  justify-content: center;
   border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
   width: auto;
+  margin-bottom: 32px;
 }
 .price-wrapper label {
-  display: inline-block;
+  display: flex;
   width: 144px;
   height: 48px;
+  align-items: center;
+}
+.price-wrapper .min-price {
+  border-right: 2px solid #ffffff;
+}
+.min-price input {
+  width: 10px;
+  padding-left: 19px;
+  padding-right: 83px;
+}
+.price-control input {
+  width: 40px;
+  padding-left: 17px;
+  padding-right: 50px;
 }
 .price-block h2 {
   font-weight: 700;
@@ -967,6 +985,57 @@ body {
   line-height: 26px;
   color: #ffffff;
   margin-top: 0;
+}
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range-toggle:focus {
+  border: 3px solid #83b3d3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+.toggle-min {
+  top: -7px;
+  left: -20px;
+}
+.toggle-max {
+  top: -7px;
+  right: -20px;
+}
+.price::-webkit-outer-spin-button,
+.price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.price-name {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  opacity: 0.3;
+  padding-right: 13px;
 }
 .sorting-select-control {
   display: flex;
