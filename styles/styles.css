@@ -596,6 +596,13 @@ body {
   border-color: #83b3d3;
   border-radius: 0px 10px 10px 0px;
 }
+.appointment-form:invalid {
+  background: #ffffff;
+  border: 2px solid #ff5757;
+  box-sizing: border-box;
+  border-radius: 0px 10px 10px 0px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 .appointment-form .button {
   background-color: #83b3d3;
   border-radius: 0px 10px 10px 0px;
@@ -611,6 +618,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .button:hover {
   background-color: #68a2ca;
   border-radius: 0px 10px 10px 0px;
@@ -1564,6 +1572,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  /* display: none; */
 }
 .modal-container-close {
   display: none;
@@ -1578,13 +1587,37 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.modal-auth {
+.text-error {
+  padding-left: 158px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  align-items: center;
+  color: #ff5757;
+  margin-bottom: 11px;
+}
+.text-ok {
+  padding-left: 158px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 40px;
+  align-items: center;
+  color: #333333;
+  font-weight: 400;
+}
+.field-group {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.field-group {
+  position: relative;
 }
 .modal-close-button {
   position: absolute;
   padding: 0;
   top: 66px;
-  right: 65px;
+  right: 66px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -1641,15 +1674,15 @@ body {
 }
 .calendar {
   position: absolute;
-  top: 160px;
-  right: 90px;
+  top: 15px;
+  right: 25px;
   opacity: 0.6;
 }
 .calendar-2 {
   opacity: 0.6;
   position: absolute;
-  top: 226px;
-  right: 90px;
+  top: 19px;
+  right: 25px;
 }
 .auth-form-field {
   width: 420px;
@@ -1737,6 +1770,9 @@ body {
   display: block;
 }
 .tooltip-icon {
+  position: absolute;
+  align-items: center;
+  text-align: center;
 }
 .tooltip-toggle:hover {
   background-color: #68a2ca;
@@ -1772,6 +1808,19 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
+.tooltip-text:after {
+  content: "";
+  background-image: url("../images/icons-logo/popup-children.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14px;
+  height: 6px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
 .form-label-icon {
   position: relative;
   padding-right: 16px;
@@ -1805,4 +1854,41 @@ body {
   background-color: #68a2ca;
   border-radius: 10px;
   border: none;
+}
+.minus {
+  position: absolute;
+  top: 16px;
+}
+.minus-icon {
+  position: absolute;
+  top: 27px;
+  left: 161px;
+  width: 20px;
+}
+.plus-icon {
+  position: absolute;
+  right: 65px;
+  top: 20px;
+  opacity: 0.3;
+  width: 20px;
+}
+.plus-children {
+  position: absolute;
+  top: 18px;
+  right: 6px;
+}
+.plus-icon-children {
+  position: absolute;
+  top: 22px;
+  right: 9px;
+}
+.minus-children {
+  position: absolute;
+  top: 17px;
+  right: 115px;
+}
+.minus-icon-children {
+  position: absolute;
+  top: 27px;
+  right: 117px;
 }
