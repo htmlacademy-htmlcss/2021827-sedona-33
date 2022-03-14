@@ -304,12 +304,8 @@ body {
   margin: 0px auto 0px auto;
 }
 
-/* Настоящий городок и мост дьявола*/
 .services-item {
   list-style-type: none;
-}
-
-.services-item-three {
 }
 .services-name {
   display: block;
@@ -735,6 +731,7 @@ body {
   display: block;
   padding-left: 36px;
 }
+
 /* Mark */
 .control-mark {
   position: absolute;
@@ -748,22 +745,19 @@ body {
 .control:hover .control-mark {
   background: rgba(255, 255, 255, 0.6);
 }
-.control .control-mark:focus-visible {
-  background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
-  width: 17px;
-  height: 17px;
-}
 
 .control:active .control-mark {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../images/icons-logo/check-mark.svg);
+  background-image: url("../images/icons-logo/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.control-input:focus-visible + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow:0px 0px 0px 3px #83b3d3;
 }
 /* Radio */
 .control-input[type="radio"] + .control-mark {
@@ -778,6 +772,16 @@ body {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  box-shadow:0px 0px 0px 3px#83B3D3;
+}
+.price-block:focus-visible {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81b3d2;
+  border-radius: 4px 0px 0px 4px;
 }
 .control-label {
   font-weight: 400;
@@ -932,8 +936,7 @@ body {
 .catalog-filter-item:nth-child(3) {
   margin-bottom: 0px;
 }
-.catalog-filter-group {
-}
+
 .catalog-filter-title {
   font-weight: 700;
   font-style: normal;
@@ -1070,10 +1073,16 @@ body {
   border: 2px solid #ffffff;
   opacity: 0.6;
 }
-.price-wrapper:focus-visible {
+/* .price-wrapper:focus-visible {
   border: 2px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81b3d2;
+  border-radius: 4px 0px 0px 4px;
+} */
+.price:focus-visible {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
   border-radius: 4px 0px 0px 4px;
 }
 
