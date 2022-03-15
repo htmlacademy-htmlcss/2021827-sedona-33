@@ -78,13 +78,8 @@ body {
   bottom: 21px;
   color: #ffffff;
 }
-.icon-number:hover {
-}
-.icon-number:focus {
-}
 .icon-number:active {
   background-color: #7db550;
-  color: #ffffff;
   opacity: 0.3;
 }
 .navigation-list {
@@ -125,6 +120,8 @@ body {
 .header-logo {
   width: 140px;
   margin-right: 47px;
+  position: relative;
+  z-index: 1;
 }
 .navigation-link {
   display: block;
@@ -134,16 +131,13 @@ body {
   line-height: 26px;
   color: #000000;
   font-weight: 700;
-  outline: none;
   text-align: center;
   text-decoration: none;
 }
 .navigation-link:hover {
   color: #756257;
 }
-.navigation-link:focus {
-  color: #000000;
-}
+
 .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
 }
@@ -152,24 +146,25 @@ body {
   background-color: #615048;
   color: #ffffff;
 }
-.navigation-here:focus {
-  border: 3px solid #83b3d3;
+.navigation-here:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
+  outline-offset: 0;
   background-color: #615048;
 }
-.navigation-icon:hover path {
+.navigation-icon:hover {
   fill: #756257;
 }
-.navigation-here:active path {
+.navigation-here:active {
   fill: #756257;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
-.navigation-link:focus .navigation-icon {
+.navigation-link:focus-visible .navigation-icon {
   color: #756257;
 }
-.navigation-icon:active {
+/* .navigation-icon:active {
   fill: #756257;
   opacity: 0.3;
-}
+} */
 
 .navigation-search {
   position: relative;
@@ -184,7 +179,16 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  outline: none;
+}
+/* Состояния  */
+.navigation-search:hover {
+  fill: #756257;
+}
+.navigation-icon:hover path {
+  fill: #756257;
+}
+.navigation-icon:active path {
+  fill: rgba(117, 98, 87, 0.3);
 }
 .navigation-heart {
   width: 42px;
@@ -195,7 +199,6 @@ body {
   color: #000000;
   display: flex;
   align-items: center;
-  outline: none;
   justify-content: center;
 }
 
@@ -215,11 +218,10 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
-.navigation-icon {
-  fill: #000000;
-}
 .main-index {
   flex-grow: 1;
+  position: relative;
+  margin-top: -10px;
 }
 
 .tourist-town {
@@ -231,6 +233,8 @@ body {
   flex-grow: 1;
 }
 .main-inner {
+  position: relative;
+  margin-top: -10px;
 }
 .services {
   color: #333333;
@@ -300,12 +304,8 @@ body {
   margin: 0px auto 0px auto;
 }
 
-/* Настоящий городок и мост дьявола*/
 .services-item {
   list-style-type: none;
-}
-
-.services-item-three {
 }
 .services-name {
   display: block;
@@ -493,14 +493,12 @@ body {
 
 .button-search {
   font: inherit;
-  border: none;
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #756257;
-  outline: none;
   color: #ffffff;
   border-radius: 10px;
   width: 575px;
@@ -511,14 +509,15 @@ body {
   line-height: 36px;
   margin: 0px auto 0px auto;
   cursor: pointer;
+  border: 3px solid transparent;
 }
 .button-search:hover {
-  background: #615048;
+  background-color: #615048;
 }
-.button-seatch:focus {
-  background: #615048;
-  box-sizing: border-box;
+.button-search:focus-visible {
+  background-color: #615048;
   border: 3px solid #83b3d3;
+  outline: none;
 }
 .button-search:active {
   background: #615048;
@@ -588,9 +587,9 @@ body {
   display: flex;
   margin: 0 auto;
 }
-.appointment-form input {
+.form-forma {
   font: inherit;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
   border-radius: 10px 0px 0px 10px;
   padding: 0px 19px 0px 22px;
@@ -598,15 +597,16 @@ body {
   height: 60px;
   background-color: #f2f2f2;
 }
-.appointment-form:hover input {
+.form-forma:hover {
   background-color: #e6e6e6;
 }
-.appointment-form:focus input {
-  border: 3px solid #83b3d3;
-  border-color: #83b3d3;
-  border-radius: 0px 10px 10px 0px;
+.form-forma:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
+  outline: none;
+  border-radius: 10px 0px 0px 10px;
 }
-.appointment-form:invalid {
+
+.form-forma:invalid {
   background: #ffffff;
   border: 2px solid #ff5757;
   box-sizing: border-box;
@@ -634,9 +634,9 @@ body {
   background-color: #68a2ca;
   border-radius: 0px 10px 10px 0px;
 }
-.button:focus {
+.button:focus-visible {
   background: #68a2ca;
-  border: 3px solid #756257;
+  box-shadow: 0px 0px 0px 3px #756257;
   border-radius: 0px 10px 10px 0px;
 }
 .button:active {
@@ -645,13 +645,13 @@ body {
 }
 
 .page-footer {
-  padding: 40px 72px 40px 72px;
+  padding: 30px 72px 30px 72px;
   display: flex;
+  height: 70px;
   align-items: center;
 }
 
 /* Иконки соц в футере */
-/* ОШИБки с свг */
 
 .footer-social-link {
   display: block;
@@ -666,34 +666,37 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 130px;
-  height: 30px;
+  height: 40px;
+  align-items: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .footer-social-item:nth-child(1) {
-  margin-right: 27px;
+  margin-right: 3px;
 }
 .footer-social-item:nth-child(2) {
-  margin-right: 23px;
+  margin-right: 3px;
 }
 .footer-social-item:nth-child(3) {
   margin-right: 0px;
 }
-.footer-social-item:focus {
+.footer-social-item:focus-visible {
   border: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
 }
+
 .social-icon path {
   fill: #83b3d3;
 }
 .social-icon:hover path {
   fill: #68a2ca;
 }
-.social-icon:focus path {
+.social-icon:focus-visible path {
   fill: #68a2ca;
 }
+
 .contacts-number {
   display: block;
   width: 720px;
@@ -710,11 +713,11 @@ body {
 .contact-phone:hover {
   color: #756257;
 }
-.contact-phone:focus {
+.contact-phone:focus-visible {
   color: #756257;
   order: 0;
   flex-grow: 0;
-  border: 3px solid #83b3d3;
+  box-shadow: 0px 0px 0px 3px #83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -728,6 +731,7 @@ body {
   display: block;
   padding-left: 36px;
 }
+
 /* Mark */
 .control-mark {
   position: absolute;
@@ -741,21 +745,19 @@ body {
 .control:hover .control-mark {
   background: rgba(255, 255, 255, 0.6);
 }
-.control:focus .control-mark {
-  background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
-  width: 17px;
-  height: 17px;
-}
+
 .control:active .control-mark {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../images/icons-logo/check-mark.svg);
+  background-image: url("../images/icons-logo/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.control-input:focus-visible + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow:0px 0px 0px 3px #83b3d3;
 }
 /* Radio */
 .control-input[type="radio"] + .control-mark {
@@ -770,6 +772,16 @@ body {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  box-shadow:0px 0px 0px 3px#83B3D3;
+}
+.price-block:focus-visible {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81b3d2;
+  border-radius: 4px 0px 0px 4px;
 }
 .control-label {
   font-weight: 400;
@@ -834,7 +846,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.card-grid-toggle:focus {
+.card-grid-toggle:focus-visible {
   border: 2px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
@@ -893,6 +905,7 @@ body {
   position: relative;
   margin-top: 0px;
   margin-bottom: 45px;
+  align-items: center;
   color: #ffffff;
   padding: 0px;
   list-style-type: none;
@@ -908,8 +921,8 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-.breadcrumbs-link:focus {
-  border: 3px solid #83b3d3;
+.breadcrumbs-link:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -923,8 +936,7 @@ body {
 .catalog-filter-item:nth-child(3) {
   margin-bottom: 0px;
 }
-.catalog-filter-group {
-}
+
 .catalog-filter-title {
   font-weight: 700;
   font-style: normal;
@@ -963,9 +975,9 @@ body {
   background-color: #68a2ca;
   border-radius: 4px;
 }
-.button-ok:focus {
+.button-ok:focus-visible {
   background-color: #68a2ca;
-  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 0px 3px #ffffff;
   border-radius: 4px;
 }
 .button-ok:active {
@@ -981,9 +993,10 @@ body {
   outline: none;
   grid-column: 4 / 5;
   line-height: 23px;
+  padding: 0;
+  width: 100px;
+  height: 32px;
   text-align: center;
-  width: 160px;
-  height: 23px;
   color: #ffffff;
   background: none;
   border: none;
@@ -992,9 +1005,9 @@ body {
   color: #ffffff;
   opacity: 0.6;
 }
-.button-reset:focus {
+.button-reset:focus-visible {
   color: #ffffff;
-  border: 3px solid #83b3d3;
+  box-shadow: 0px 0px 0px 3px #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1060,12 +1073,19 @@ body {
   border: 2px solid #ffffff;
   opacity: 0.6;
 }
-.price-wrapper:focus {
+/* .price-wrapper:focus-visible {
   border: 2px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81b3d2;
   border-radius: 4px 0px 0px 4px;
+} */
+.price:focus-visible {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  border-radius: 4px 0px 0px 4px;
 }
+
 .price-wrapper:active {
   border: 2px solid #ffffff;
   box-sizing: border-box;
@@ -1107,7 +1127,7 @@ body {
 .range-toggle:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-.range-toggle:focus {
+.range-toggle:focus-visible {
   border: 3px solid #83b3d3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1123,10 +1143,15 @@ body {
   top: -7px;
   right: -20px;
 }
+
 .price::-webkit-outer-spin-button,
 .price::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.price[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 .price-name {
   font-size: 18px;
@@ -1165,16 +1190,18 @@ body {
   border-radius: 4px;
   outline: none;
   width: 160px;
+  height: 48px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  background-color: #ffffff;
 }
 .sorting-select-control:hover {
   border: 2px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
-.sorting-select-control:focus {
+.sorting-select-control:focus-visible {
   border: 2px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1184,6 +1211,10 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   opacity: 0.3;
+}
+.select {
+  -webkit-appearance: none;
+  background-color: #ffffff;
 }
 .hotel-card {
   display: flex;
@@ -1211,6 +1242,7 @@ body {
   font-size: 24px;
   margin-bottom: 16px;
   line-height: 31px;
+  box-sizing: border-box;
   color: #000000;
 }
 .hotel-card-link {
@@ -1223,11 +1255,14 @@ body {
 .hotel-card-link:hover {
   opacity: 0.6;
 }
-.hotel-card-link:focus {
-  border: 3px solid #83b3d3;
+.hotel-card-link:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
 }
 .hotel-card-link:active {
   opacity: 0.3;
+}
+.hotel-card-image {
+  display: block;
 }
 .hotel-name {
   font-weight: 400;
@@ -1276,10 +1311,10 @@ body {
   background-color: #615048;
   border-radius: 4px;
 }
-.hotel-card-faq:focus {
-  background: #615048;
-  border: 3px solid #83b3d3;
-  margin-right: 20px;
+.hotel-card-faq:focus-visible {
+  background-color: #615048;
+  box-shadow: 0px 0px 0px 3px #83b3d3;
+  margin-right: 26px;
 }
 .hotel-card-faq:active {
   background: #615048;
@@ -1324,12 +1359,10 @@ body {
 }
 .hotel-card-green:hover {
   background-color: #6c9e42;
-  border-radius: 4px;
 }
-.hotel-card-green:focus {
+.hotel-card-green:focus-visible {
   background-color: #6c9e42;
-  border: 3px solid #756257;
-  border-radius: 4px;
+  box-shadow: 0px 0px 0px 3px #756257;
 }
 .hotel-card-green:active {
   background-color: #6c9e42;
@@ -1337,19 +1370,18 @@ body {
 }
 .hotel-card-favorites:hover {
   background-color: #68a2ca;
-  border: 1px solid #756257;
+  box-shadow: 0px 0px 0px 1px #756257;
   box-sizing: border-box;
 }
-.hotel-card-favorites:focus {
+.hotel-card-favorites:focus-visible {
   background-color: #68a2ca;
-  border: 3px solid #756257;
+  box-shadow: 0px 0px 0px 3px #756257;
 }
 .hotel-card-favorites:active {
-  background: #68a2ca;
-  border: 1px solid #756257;
+  background-color: #68a2ca;
+  box-shadow: 0px 0px 0px 1px #756257;
   box-sizing: border-box;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .rating {
   background-color: #f2f2f2;
@@ -1413,6 +1445,7 @@ body {
 }
 .button-wrapper-group {
   padding-top: 42px;
+  text-align: center;
 }
 .pagination-container {
   display: flex;
@@ -1452,18 +1485,14 @@ body {
 }
 .pagination-link:hover {
   background-color: #68a2ca;
-  border-radius: 4px;
 }
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background-color: #68a2ca;
-  border: 3px solid #756257;
-  border-radius: 4px;
+  box-shadow: 0px 0px 0px 3px #756257;
 }
-.pagination:active {
-  background-color: #68a2ca;
-  border-radius: 4px;
-  color: #ffffff;
-  opacity: 0.3;
+.pagination-link:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 .pagination-link-1 {
   background-color: #f2f2f2;
@@ -1497,23 +1526,24 @@ body {
 .sorting-control {
   display: flex;
   margin-left: auto;
-  margin-top: 36px;
+  align-items: center;
 }
 .button {
   box-sizing: border-box;
 }
 .footer-social-link {
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
   box-sizing: border-box;
   background-position: center;
 }
-.footer-social-link:focus {
-  border: 3px solid #83b3d3;
+.footer-social-link:focus-visible {
+  box-shadow: 0px 0px 0px 3px#83b3d3;
   box-sizing: border-box;
   border-radius: 10px;
   width: 40px;
@@ -1522,18 +1552,40 @@ body {
   padding: 10px;
   justify-content: center;
 }
+/* facebook new */
+.footer-social-fb {
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding-left: 13px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  background-position: center;
+}
+.footer-social-fb:focus-visible {
+  box-shadow: 0px 0px 0px 3px#83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding-left: 13px;
+  justify-content: center;
+}
+
 .breadcrumbs-link-home {
   background-image: url("../images/icons-logo/homee.svg");
-  width: 15px;
-  height: 15px;
+  width: 28px;
+  height: 27px;
   display: block;
   outline: none;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 6px;
 }
-.breadcrumbs-link-home:focus {
-  border: 3px solid #83b3d3;
+.breadcrumbs-link-home:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
   color: #ffffff;
@@ -1554,7 +1606,7 @@ body {
   background-position: center;
   width: 5px;
   height: 15px;
-  bottom: 7px;
+  bottom: 10px;
   right: 0;
 }
 .breadcrumbs-item:last-of-type {
@@ -1566,7 +1618,7 @@ body {
   color: #ffffff;
   opacity: 0.6;
 }
-.breadcrumbs-item:focus {
+.breadcrumbs-item:focus-visible {
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1582,34 +1634,37 @@ body {
 .footer-logo:hover path {
   fill: #756257;
 }
-.footer-logo:focus path {
+.footer-logo:focus-visible path {
   fill: #756257;
 }
 .footer-logo {
   outline: none;
 }
-.logo-link:focus {
-  border: 3px solid #83b3d3;
-  box-sizing: border-box;
-  border-radius: 10px;
+.logo-link {
   padding: 10px;
+}
+.logo-link:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83b3d3;
+  outline: none;
+  border-radius: 10px;
 }
 .footer-logo:active path {
   fill: #756257;
 }
-.modal-container-show {
-  display: block;
-}
+
 /* Modal  */
 .modal-container {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  /* display: none; */
+}
+.modal-container-show {
+  display: flex;
+  display: none;
 }
 .modal-container-close {
   display: none;
@@ -1667,9 +1722,10 @@ body {
 .modal-close-button:hover {
   background-color: #e6e6e6;
 }
-.modal-close-button:focus {
-  background: #e6e6e6;
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
   border: 3px solid #83b3d3;
+  opacity: 1;
 }
 .modal-close-button:active {
   background-color: #e6e6e6;
@@ -1691,7 +1747,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .visit-data {
   font-size: 18px;
@@ -1749,26 +1805,24 @@ body {
   outline: none;
   display: block;
   font: inherit;
-  padding: 0px 246px 0px 19px;
+  border: 2px solid transparent;
+  padding-left: 19px;
   box-sizing: border-box;
   cursor: pointer;
   list-style-type: none;
 }
 .auth-form-field:hover {
   background: #e6e6e6;
-  border-radius: 4px;
   border: none;
 }
-.auth-form-field:focus {
-  background: #e6e6e6;
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
+.auth-form-field:focus-visible {
+  background-color: #e6e6e6;
+  box-shadow: 0px 0px 0px 3px#83b3d3;
 }
-.auth-form-field:active {
-  background: #ffffff;
+.auth-form-field:not(:placeholder-shown) {
+  background-color: #ffffff;
   border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 .adults {
   font-size: 18px;
@@ -1833,6 +1887,8 @@ body {
   margin: 0;
   display: block;
   background-position: center;
+  background-image: url("../images/icons-logo/popup-children.svg");
+  background-repeat: no-repeat;
 }
 .tooltip-icon {
   position: absolute;
@@ -1870,18 +1926,19 @@ body {
   display: none;
 }
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:focus-visible + .tooltip-text {
   display: block;
 }
 .tooltip-text:after {
   content: "";
-  background-image: url("../images/icons-logo/popup-children.svg");
+  background-image: url("../images/icons-logo/popover-vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
   width: 14px;
-  height: 6px;
+  height: 14px;
+  top: -7%;
   left: 0;
   right: 0;
   position: absolute;
@@ -1909,18 +1966,16 @@ body {
 }
 .to-find:hover {
   background-color: #68a2ca;
-  border-radius: 10px;
   border: none;
 }
-.to-find:focus {
+.to-find:focus-visible {
   background-color: #68a2ca;
-  border: 3px solid #756257;
-  border-radius: 10px;
+  outline: 3px solid #756257;
 }
 .to-find:active {
   background-color: #68a2ca;
-  border-radius: 10px;
   border: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 .minus {
   border: none;
@@ -1940,11 +1995,11 @@ body {
 .minus:hover {
   opacity: 1;
 }
-.minus:focus {
+.minus:focus-visible {
   width: 25px;
   height: 25px;
   opacity: 1;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1974,11 +2029,11 @@ body {
 .plus:hover {
   opacity: 1;
 }
-.plus:focus {
+.plus:focus-visible {
   width: 25px;
   height: 25px;
   opacity: 1;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -2008,11 +2063,11 @@ body {
 .plus-children:hover {
   opacity: 1;
 }
-.plus-children:focus {
+.plus-children:focus-visible-visible {
   width: 25px;
   height: 25px;
   opacity: 1;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -2037,11 +2092,11 @@ body {
 .minus-children:hover {
   opacity: 1;
 }
-.minus-children:focus {
+.minus-children:focus-visible {
   width: 25px;
   height: 25px;
   opacity: 1;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   box-sizing: border-box;
   border-radius: 4px;
 }

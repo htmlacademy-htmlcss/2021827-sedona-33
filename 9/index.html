@@ -12,7 +12,9 @@
   <div class="wrapper">
     <header class="page-header">
       <nav class="navigation">
-        <img class="header-logo" href="#" src="images/icons-logo/logo.svg" width="139" height="70" alt=Логотип.>
+        <a class="navigation-logo" href="index.html">
+          <img class="header-logo" src="images/icons-logo/logo.svg" width="139" height="70" alt=Логотип.>
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="">Главная
@@ -120,7 +122,7 @@
       <h2 class="subscribe-tag">подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="text" id="appointment-mail" name="appointment-date" placeholder="Ваш e-mail">
+        <input class="form-forma" type="text" id="appointment-mail" name="appointment-date" placeholder="Ваш e-mail">
         <label class="visually-hidden" for="appointment-mail">e_mail.</label>
         <button class="button" type="submit">подписаться</button>
       </form>
@@ -180,8 +182,8 @@
       </a>
     </footer>
     <!-- показ модального окна -->
-<!-- <div class="modal-container-show"></div> -->
-    <div class="modal-container">
+
+    <div class="modal-container modal-container-show">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -194,7 +196,7 @@
               <div class="data-wrapper">
                 <input class="auth-form-field field" type="text" id="auth-record" name="auth-record"
                   placeholder="Укажите дату">
-                <button class="calendar" type="button" value=""></button>
+                <button class="calendar" type="button" aria-label="calendar" value=""></button>
                 <span class="text-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
@@ -203,7 +205,7 @@
               <div class="data-wrapper">
                 <input class="auth-form-field field" type="text" id="auth-record" name="auth-record"
                   placeholder="Укажите дату">
-                <button class="calendar-2" type="button" value=""></button>
+                <button class="calendar-2" type="button" aria-label="calendar" value=""></button>
                 <span class="text-ok">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -220,17 +222,6 @@
                   <label class="children" for="appointment-date">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#fff">
-                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                        </g>
-                        <defs>
-                          <clipPath id="a">
-                            <path fill="#fff" d="M0 0h1v9H0z" />
-                          </clipPath>
-                        </defs>
-                      </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
                       с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
@@ -249,7 +240,7 @@
         </section>
       </div>
     </div>
-
+  </div>
 </body>
 
 </html>
