@@ -74,8 +74,8 @@ body {
   background-color: #7db54f;
   width: 20px;
   height: 20px;
-  left: 23px;
-  bottom: 21px;
+  left: 25px;
+  bottom: 18px;
   color: #ffffff;
 }
 .icon-number:active {
@@ -89,14 +89,16 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: -17px;
 }
 
 .navigation-user {
   display: flex;
   max-width: 290px;
+  flex-wrap: wrap;
   margin-left: auto;
   box-sizing: border-box;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 14px;
 }
 .navigation-user .navigation-link {
@@ -116,6 +118,7 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 3px;
 }
 .header-logo {
   width: 140px;
@@ -161,10 +164,6 @@ body {
 .navigation-link:focus-visible .navigation-icon {
   color: #756257;
 }
-/* .navigation-icon:active {
-  fill: #756257;
-  opacity: 0.3;
-} */
 
 .navigation-search {
   position: relative;
@@ -180,7 +179,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* Состояния  */
+
 .navigation-search:hover {
   fill: #756257;
 }
@@ -243,7 +242,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Планирую использовать под высоту h и p */
+
 .sedona {
   padding-top: 63px;
   padding-bottom: 80px;
@@ -254,9 +253,10 @@ body {
   width: 400px;
   padding-top: 90px;
   box-sizing: border-box;
+  height: 384px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 79px;
+  padding-bottom: 68px;
 }
 .icon-home-1::before {
   position: absolute;
@@ -332,7 +332,7 @@ body {
 .services-item .services-title {
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0 auto 29px;
+  margin: 0 auto 26px;
   font-size: 24px;
   line-height: 28px;
 }
@@ -358,7 +358,7 @@ body {
   position: relative;
   font-size: 24px;
   line-height: 28px;
-  padding-top: 95px;
+  padding-top: 93px;
   text-transform: uppercase;
   width: 250px;
   margin: 0 auto 20px;
@@ -377,7 +377,6 @@ body {
 
 .services-item .services-description {
   font-weight: 400;
-  width: 250px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -391,6 +390,7 @@ body {
   display: block;
   margin: 0 auto 30px;
   width: 250px;
+  padding-top: 3px;
 }
 /* стилизую все спаны разом */
 .services-name {
@@ -426,12 +426,27 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-
 .services-detail .services-detail-item-2 {
   background-color: #ffffff;
 }
 .services-detail .services-detail-item-3 {
   background-color: rgba(131, 179, 211, 0.12);
+}
+.services-detail-item-1 .services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  padding-left: 14px;
+}
+.services-detail-item-2 .services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  padding-left: 14px;
 }
 .services-item-6 {
   justify-content: space-between;
@@ -444,6 +459,16 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+.services-item-6 .services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+}
+.services-item-6 .services-name {
+  padding-top: 0px;
+}
 .services-item-7 {
   justify-content: space-between;
   width: 400px;
@@ -453,6 +478,16 @@ body {
   padding-bottom: 108px;
   padding-right: 10px;
   padding-left: 10px;
+}
+.services-item-7 .services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+}
+.services-item-7 .services-name {
+  padding-top: 0px;
 }
 .services-item-8 {
   justify-content: space-between;
@@ -464,12 +499,22 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
+.services-item-8 .services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+}
+.services-item-8 .services-name {
+  padding-top: 0px;
+}
 /* Бэкграунды */
 .hotel-search {
   text-align: center;
   margin: 0;
   padding-top: 91px;
-  padding-bottom: 93px;
+  padding-bottom: 66px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -490,7 +535,9 @@ body {
   color: #333333;
   margin: 0px auto 71px auto;
 }
-
+.search-wrap {
+  padding-right: 14px;
+}
 .button-search {
   font: inherit;
   box-sizing: border-box;
@@ -534,7 +581,7 @@ body {
   padding-bottom: 94px;
 }
 .subscribe-1 {
-  background-image: url(../images/backgrounds/background-footer.jpg);
+  background-image: url("../images/backgrounds/background-footer.jpg");
 }
 .subscribe-2 {
   padding-top: 73px;
@@ -882,7 +929,7 @@ body {
   height: 48px;
 }
 .inner-header {
-  background-image: url(../images/backgrounds/catalog-background.jpg);
+  background-image: url("../images/backgrounds/catalog-background.jpg");
   background-size: 1200px 408px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -955,8 +1002,8 @@ body {
 }
 
 .button-ok {
-  width: 160px;
-  height: 48px;
+  min-width: 160px;
+  min-height: 48px;
   grid-column: 4 / 5;
   font-weight: 700;
   outline: none;
@@ -994,8 +1041,8 @@ body {
   grid-column: 4 / 5;
   line-height: 23px;
   padding: 0;
-  width: 100px;
-  height: 32px;
+  min-width: 100px;
+  min-height: 32px;
   text-align: center;
   color: #ffffff;
   background: none;
@@ -1073,12 +1120,7 @@ body {
   border: 2px solid #ffffff;
   opacity: 0.6;
 }
-/* .price-wrapper:focus-visible {
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 0px 3px #81b3d2;
-  border-radius: 4px 0px 0px 4px;
-} */
+
 .price:focus-visible {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -1465,8 +1507,8 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   background-color: #83b3d3;
   font-weight: 700;
   font-style: normal;
@@ -1504,8 +1546,8 @@ body {
   box-sizing: border-box;
   padding-top: 15px;
   border-radius: 4px;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
