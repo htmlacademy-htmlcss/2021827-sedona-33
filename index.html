@@ -161,7 +161,7 @@
                   fill="#83B3D3" />
               </g>
               <defs>
-                <clipPath id="a">
+                <clipPath id="b">
                   <path fill="#fff" d="M0 0h20v16H0z" />
                 </clipPath>
               </defs>
@@ -178,7 +178,7 @@
         </svg>
       </a>
     </footer>
-    <!-- modal-container-show  -- класс показа -->
+    <!-- modal-container-show класс показа-->
     <div class="modal-container">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
@@ -199,20 +199,20 @@
             <div class="field-group">
               <label class="visit-data-back" for="auth-record">Дата выезда:</label>
               <div class="data-wrapper">
-                <input class="auth-form-field field" type="text" id="auth-record" name="auth-record"
+                <input class="auth-form-field field" type="text" id="record" name="auth-record"
                   placeholder="Укажите дату">
                 <button class="calendar-2" type="button" aria-label="календарь" value=""></button>
                 <span class="text-ok">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
 
-            <div class="people " action="https://echo.htmlacademy.ru/" method="post">
+            <div class="people">
               <div class="field-group">
                 <label class="adults" for="adults-number">Взрослые:</label>
                 <div class="adults-wrapper">
                   <button class="minus" type="button" value=""></button>
                   <button class="plus" type="button" value=""></button>
-                  <input class="adults-form-field field" type="number" id="minus plus" name="adults" placeholder="2">
+                  <input class="adults-form-field field" type="number" id="minus-plus" name="adults" placeholder="2">
                 </div>
                 <div class="field-group">
                   <label class="children" for="appointment-date">Дети:</label>
@@ -225,7 +225,7 @@
                   <div class="children-wrapper">
                     <button class="minus-children" type="button" value=""></button>
                     <button class="plus-children" type="button" value=""></button>
-                    <input class="children-form-field field" type="number" id="minus-children plus-children"
+                    <input class="children-form-field field" type="number" id="minus-plus-children"
                       name="children" placeholder="1">
                   </div>
                 </div>

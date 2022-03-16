@@ -1136,12 +1136,13 @@ body {
   padding-bottom: 10px;
 }
 
-.price-wrapper:hover {
+/.price-wrapper:hover {
   box-sizing: border-box;
   border-radius: 4px 0px 0px 4px;
   border: 2px solid #ffffff;
   opacity: 0.6;
 }
+
 
 .price:focus-visible {
   border: 2px solid #FFFFFF;
@@ -1281,6 +1282,13 @@ position: absolute;
   background-position: right 20px center;
    appearance: none;
   -webkit-appearance: none;
+}
+.sorting-control-number:hover {
+  border: 2px solid #83b3d3;
+  background-color: #f2f2f2;
+}
+..sorting-control-number:focus-visible {
+  border: 2px solid #83b3d3;
 }
 .sorting-select-control:hover {
   border: 2px solid #83b3d3;
@@ -1909,7 +1917,6 @@ position: absolute;
 }
 .auth-form-field:hover {
   background: #e6e6e6;
-  border: none;
 }
 .auth-form-field:focus-visible {
   background-color: #e6e6e6;
