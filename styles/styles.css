@@ -27,6 +27,9 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
 }
+.h1, .h2, .h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -218,6 +221,7 @@ body {
 .tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
   background-size: 100% auto;
+  background-color:rgba(224, 224, 224, 1);;
   padding-top: 51px;
   position: relative;
   padding-bottom: 83px;
@@ -227,7 +231,7 @@ body {
 .tourist-town::after {
   position: absolute;
   content: url("../images/icons-logo/mask-tourist.svg");
-  bottom: 1px;
+  bottom: 0px;
   display: block;
   width: 1200px;
   height: 57px;
@@ -253,10 +257,9 @@ body {
   width: 400px;
   padding-top: 90px;
   box-sizing: border-box;
-  height: 384px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 68px;
+  padding-bottom: 88px;
 }
 .icon-home-1::before {
   position: absolute;
@@ -521,7 +524,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 0px auto 59px auto;
+  margin: 0px auto 60px auto;
 }
 .search-wrap {
   padding-right: 14px;
@@ -556,8 +559,8 @@ body {
 }
 .button-search:active {
   background: #615048;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+
 }
 .subscribe {
   box-sizing: border-box;
@@ -569,6 +572,7 @@ body {
 }
 .subscribe-1 {
   background-image: url("../images/backgrounds/background-footer.jpg");
+  background-color: rgba(120, 138, 255, 1);
 }
 .subscribe-2 {
   padding-top: 0px;
@@ -621,7 +625,7 @@ body {
   display: flex;
   margin: 0 auto;
 }
-.form-forma {
+.form-form {
   font: inherit;
   border: 2px solid transparent;
   outline: none;
@@ -630,16 +634,17 @@ body {
   width: 600px;
   height: 60px;
   background-color: #f2f2f2;
+  line-height: inherit;
 }
-.form-forma:hover {
+.form-form:hover {
   background-color: #e6e6e6;
 }
-.form-forma:focus-visible {
+.form-form:focus-visible {
   box-shadow: 0px 0px 0px 3px #83b3d3;
   outline: none;
   border-radius: 10px 0px 0px 10px;
 }
-.form-forma:invalid {
+.form-form:invalid {
   background: #ffffff;
   border: 2px solid #ff5757;
   box-sizing: border-box;
@@ -647,23 +652,27 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .appointment-form .button {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
   background-color: #83b3d3;
   border-radius: 0px 10px 10px 0px;
-  width: 200px;
+  width: 212px;
   border: none;
   color: #ffffff;
   outline: none;
-  font-size: 18px;
-  line-height: 26px;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
-  padding-right: 27px;
-  padding-left: 32px;
+  padding-right: 20px;
+  padding-left: 18px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
+
+
 }
 .button:hover {
   background-color: #68a2ca;
@@ -744,6 +753,7 @@ body {
   outline: none;
   width: 331px;
   padding: 15px;
+  text-decoration: none;
 }
 .contact-phone:hover {
   color: #756257;
@@ -869,10 +879,10 @@ body {
   background-image: url("../images/icons-logo/mode-tile.svg");
 }
 .card-grid-toggle:nth-child(2) {
-  background-image: url("../images/icons-logo/mode-slideshow\ 1.svg");
+  background-image: url("../images/icons-logo/mode-slideshow.svg");
 }
 .card-grid-toggle:nth-child(3) {
-  background-image: url("../images/icons-logo/mode-list\ 1.svg");
+  background-image: url("../images/icons-logo/mode-list.svg");
 }
 .card-grid-toggle:nth-child(3n) {
   margin-right: 0px;
@@ -919,13 +929,13 @@ body {
 }
 .inner-header {
   background-image: url("../images/backgrounds/catalog-background.jpg");
-  background-size: 1200px 408px;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 35px;
   padding-bottom: 54px;
   padding-left: 72px;
   padding-right: 72px;
+  background-color: rgba(117, 118, 120, 1);;
 }
 .inner-header-name {
   margin-top: 0px;
@@ -1003,6 +1013,7 @@ body {
   border-radius: 4px;
   border: none;
   color: #ffffff;
+  font-family: 'PT Sans';
 }
 .button-ok:hover {
   background-color: #68a2ca;
@@ -1015,12 +1026,12 @@ body {
 }
 .button-ok:active {
   background-color: #68a2ca;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  opacity: 0.3;
 }
 .button-reset {
   font-weight: 400;
+  font-family: 'PT Sans';
   font-style: normal;
   font-size: 18px;
   outline: none;
@@ -1177,6 +1188,9 @@ body {
   top: -7px;
   right: -20px;
 }
+.price {
+  font-family: 'PT Sans';
+}
 .price::-webkit-outer-spin-button,
 .price::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -1231,6 +1245,7 @@ position: absolute;
   outline: none;
   width: 160px;
   height: 48px;
+  font-family: 'PT Sans';
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -1369,10 +1384,9 @@ position: absolute;
   margin-right: 26px;
 }
 .hotel-card-faq:active {
-  background: #615048;
+  background-color: #615048;
   border-radius: 4px;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .hotel-card-favorites {
   background-color: #83b3d3;
@@ -1480,6 +1494,7 @@ position: absolute;
   width: 620px;
   outline: none;
   height: 60px;
+  font-family: 'PT Sans';
   margin: 30px auto;
   border-radius: 4px;
   border: none;
@@ -1608,6 +1623,9 @@ position: absolute;
   padding: 10px;
   justify-content: center;
 }
+.footer-social-link:active {
+  opacity: 0.3;
+}
 /* facebook */
 .footer-social-fb {
   display: block;
@@ -1689,9 +1707,6 @@ position: absolute;
 .footer-logo:hover path {
   fill: #756257;
 }
-.footer-logo:focus-visible path {
-  fill: #756257;
-}
 .footer-logo {
   outline: none;
 }
@@ -1704,9 +1719,16 @@ position: absolute;
   box-shadow: 0px 0px 0px 3px #83b3d3;
   outline: none;
   border-radius: 10px;
+
 }
-.footer-logo:active path {
-  fill: #756257;
+.logo-link:focus-visible path {
+  fill:#756257;
+}
+.logo-link:hover path {
+  fill:  #756257;
+}
+.logo-link:active path {
+  fill: rgba(117, 98, 87, 0.3);
 }
 /* Modal  */
 .modal-container {
@@ -1855,6 +1877,7 @@ position: absolute;
   border-radius: 4px;
   height: 50px;
   outline: none;
+  line-height: inherit;
   display: block;
   font: inherit;
   border: 2px solid transparent;
@@ -1897,7 +1920,10 @@ position: absolute;
   color: #000000;
   align-items: center;
   font-weight: bold;
-  font-weight: 700;
+  font-family: 'PT Sans';
+font-style: normal;
+font-size: 18px;
+line-height: 40px;
 }
 .adults-wrapper {
   position: relative;
@@ -2002,6 +2028,7 @@ position: absolute;
   width: 575px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: 'PT Sans';
   outline: none;
   background-color: #83b3d3;
   border-radius: 10px;
