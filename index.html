@@ -51,7 +51,7 @@
     </header>
     <main class="main-index">
       <div class="tourist-town">
-        <h1 class="visually-hidden" hidden>Туристический городок Седона.</h1>
+        <h1 class="visually-hidden">Туристический городок Седона.</h1>
         <img class="logo" src="images/icons-logo/welcome-sedona.svg" width="460" height="350" alt="welcome to Sedona.">
       </div>
       <section class="services">
@@ -122,7 +122,7 @@
       <h2 class="subscribe-tag">подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама,&nbsp;<br>честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="form-forma" type="text" id="appointment-mail" name="appointment-date" placeholder="Ваш e-mail">
+        <input class="form-form" type="text" id="appointment-mail" name="appointment-date" placeholder="Ваш e-mail">
         <label class="visually-hidden" for="appointment-mail">e_mail.</label>
         <button class="button" type="submit">подписаться</button>
       </form>
@@ -185,7 +185,7 @@
     <div class="modal-container">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
@@ -194,7 +194,7 @@
               <label class="visit-data" for="auth-record">Дата заезда:</label>
               <div class="data-wrapper">
                 <input class="auth-form-field field" type="text" id="auth-record" name="auth-record"
-                  placeholder="Укажите дату">
+                 required placeholder="Укажите дату">
                 <button class="calendar" type="button" aria-label="календарь." value=""></button>
                 <span class="text-error">Мы не можем отправить вас в прошлое.</span>
               </div>
@@ -202,9 +202,9 @@
             <div class="field-group">
               <label class="visit-data-back" for="auth-record">Дата выезда:</label>
               <div class="data-wrapper">
-                <input class="auth-form-field field" type="text" id="record" name="auth-record"
-                  placeholder="Укажите дату">
-                <button class="calendar-2" type="button" aria-label="календарь" value=""></button>
+                <input class="auth-form-field field two" type="text" id="record" name="auth-record"
+                 required placeholder="Укажите дату">
+                <button class="calendar-2" type="button" aria-label="календарь." value=""></button>
                 <span class="text-ok">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -214,21 +214,25 @@
                 <label class="adults" for="adults-number">Взрослые:</label>
                 <div class="adults-wrapper">
                   <button class="minus" type="button" value=""></button>
+                  <span class="visually-hidden">Убавить.</span>
                   <button class="plus" type="button" value=""></button>
-                  <input class="adults-form-field field" type="number" id="adults-number" name="adults" placeholder="2">
+                  <span class="visually-hidden">Прибавить.</span>
+                  <input class="adults-form-field field" type="text" id="adults-number" name="adults" placeholder="2">
                 </div>
                 <div class="field-group">
                   <label class="children" for="adults-number">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label.">
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
                       с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                   <div class="children-wrapper">
                     <button class="minus-children" type="button" value=""></button>
+                    <span class="visually-hidden">Убавить.</span>
                     <button class="plus-children" type="button" value=""></button>
-                    <input class="children-form-field field" type="number" id="minus-plus-children" name="children"
+                    <span class="visually-hidden">Прибавить.</span>
+                    <input class="children-form-field field" type="text" id="minus-plus-children" name="children"
                       placeholder="1">
                   </div>
                 </div>

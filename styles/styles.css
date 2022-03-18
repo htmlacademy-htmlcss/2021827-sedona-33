@@ -27,6 +27,9 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
 }
+.h1, .h2, .h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,6 +44,7 @@ body {
 .wrapper {
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   min-height: 100%;
   display: flex;
@@ -218,6 +222,7 @@ body {
 .tourist-town {
   background-image: url("../images/backgrounds/backhround-header.jpg");
   background-size: 100% auto;
+  background-color:rgba(224, 224, 224, 1);;
   padding-top: 51px;
   position: relative;
   padding-bottom: 83px;
@@ -227,7 +232,7 @@ body {
 .tourist-town::after {
   position: absolute;
   content: url("../images/icons-logo/mask-tourist.svg");
-  bottom: 1px;
+  bottom: 0px;
   display: block;
   width: 1200px;
   height: 57px;
@@ -253,10 +258,9 @@ body {
   width: 400px;
   padding-top: 90px;
   box-sizing: border-box;
-  height: 384px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 68px;
+  padding-bottom: 88px;
 }
 .icon-home-1::before {
   position: absolute;
@@ -521,7 +525,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 0px auto 59px auto;
+  margin: 0px auto 60px auto;
 }
 .search-wrap {
   padding-right: 14px;
@@ -556,8 +560,8 @@ body {
 }
 .button-search:active {
   background: #615048;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+
 }
 .subscribe {
   box-sizing: border-box;
@@ -569,6 +573,7 @@ body {
 }
 .subscribe-1 {
   background-image: url("../images/backgrounds/background-footer.jpg");
+  background-color: rgba(120, 138, 255, 1);
 }
 .subscribe-2 {
   padding-top: 0px;
@@ -621,7 +626,7 @@ body {
   display: flex;
   margin: 0 auto;
 }
-.form-forma {
+.form-form {
   font: inherit;
   border: 2px solid transparent;
   outline: none;
@@ -630,16 +635,17 @@ body {
   width: 600px;
   height: 60px;
   background-color: #f2f2f2;
+  line-height: 26px;
 }
-.form-forma:hover {
+.form-form:hover {
   background-color: #e6e6e6;
 }
-.form-forma:focus-visible {
+.form-form:focus-visible {
   box-shadow: 0px 0px 0px 3px #83b3d3;
   outline: none;
   border-radius: 10px 0px 0px 10px;
 }
-.form-forma:invalid {
+.form-form:invalid {
   background: #ffffff;
   border: 2px solid #ff5757;
   box-sizing: border-box;
@@ -647,23 +653,25 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .appointment-form .button {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
   background-color: #83b3d3;
   border-radius: 0px 10px 10px 0px;
-  width: 200px;
+  width: 212px;
   border: none;
   color: #ffffff;
   outline: none;
-  font-size: 18px;
-  line-height: 26px;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
-  padding-right: 27px;
-  padding-left: 32px;
+  padding-right: 20px;
+  padding-left: 18px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .button:hover {
   background-color: #68a2ca;
@@ -744,6 +752,7 @@ body {
   outline: none;
   width: 331px;
   padding: 15px;
+  text-decoration: none;
 }
 .contact-phone:hover {
   color: #756257;
@@ -869,10 +878,10 @@ body {
   background-image: url("../images/icons-logo/mode-tile.svg");
 }
 .card-grid-toggle:nth-child(2) {
-  background-image: url("../images/icons-logo/mode-slideshow\ 1.svg");
+  background-image: url("../images/icons-logo/mode-slideshow.svg");
 }
 .card-grid-toggle:nth-child(3) {
-  background-image: url("../images/icons-logo/mode-list\ 1.svg");
+  background-image: url("../images/icons-logo/mode-list.svg");
 }
 .card-grid-toggle:nth-child(3n) {
   margin-right: 0px;
@@ -919,13 +928,13 @@ body {
 }
 .inner-header {
   background-image: url("../images/backgrounds/catalog-background.jpg");
-  background-size: 1200px 408px;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 35px;
   padding-bottom: 54px;
   padding-left: 72px;
   padding-right: 72px;
+  background-color: rgba(117, 118, 120, 1);;
 }
 .inner-header-name {
   margin-top: 0px;
@@ -1003,6 +1012,7 @@ body {
   border-radius: 4px;
   border: none;
   color: #ffffff;
+  font-family: 'PT Sans';
 }
 .button-ok:hover {
   background-color: #68a2ca;
@@ -1015,12 +1025,12 @@ body {
 }
 .button-ok:active {
   background-color: #68a2ca;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  opacity: 0.3;
 }
 .button-reset {
   font-weight: 400;
+  font-family: 'PT Sans';
   font-style: normal;
   font-size: 18px;
   outline: none;
@@ -1177,6 +1187,9 @@ body {
   top: -7px;
   right: -20px;
 }
+.price {
+  font-family: 'PT Sans';
+}
 .price::-webkit-outer-spin-button,
 .price::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -1231,6 +1244,7 @@ position: absolute;
   outline: none;
   width: 160px;
   height: 48px;
+  font-family: 'PT Sans';
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -1369,10 +1383,9 @@ position: absolute;
   margin-right: 26px;
 }
 .hotel-card-faq:active {
-  background: #615048;
+  background-color: #615048;
   border-radius: 4px;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .hotel-card-favorites {
   background-color: #83b3d3;
@@ -1480,6 +1493,7 @@ position: absolute;
   width: 620px;
   outline: none;
   height: 60px;
+  font-family: 'PT Sans';
   margin: 30px auto;
   border-radius: 4px;
   border: none;
@@ -1608,6 +1622,9 @@ position: absolute;
   padding: 10px;
   justify-content: center;
 }
+.footer-social-link:active {
+  opacity: 0.3;
+}
 /* facebook */
 .footer-social-fb {
   display: block;
@@ -1689,9 +1706,6 @@ position: absolute;
 .footer-logo:hover path {
   fill: #756257;
 }
-.footer-logo:focus-visible path {
-  fill: #756257;
-}
 .footer-logo {
   outline: none;
 }
@@ -1704,9 +1718,16 @@ position: absolute;
   box-shadow: 0px 0px 0px 3px #83b3d3;
   outline: none;
   border-radius: 10px;
+
 }
-.footer-logo:active path {
-  fill: #756257;
+.logo-link:focus-visible path {
+  fill:#756257;
+}
+.logo-link:hover path {
+  fill:  #756257;
+}
+.logo-link:active path {
+  fill: rgba(117, 98, 87, 0.3);
 }
 /* Modal  */
 .modal-container {
@@ -1725,13 +1746,16 @@ position: absolute;
 .modal {
   position: relative;
   margin: auto;
-  padding: 70px;
+  padding: 62px 70px 70px 70px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  top: -10px;
 }
 .text-error {
   padding-left: 0px;
+  margin-top: -12px;
+  height: 29px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 40px;
@@ -1747,11 +1771,12 @@ position: absolute;
   align-items: center;
   display: block;
   color: #333333;
+  height: 29px;
   font-weight: 400;
 }
 .field-group {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
@@ -1759,8 +1784,8 @@ position: absolute;
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 66px;
-  right: 66px;
+  top: 56px;
+  right: 72px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -1786,11 +1811,15 @@ position: absolute;
   border: none;
 }
 .modal-title {
-  margin-top: 0;
-  margin-bottom: 32px;
+  min-width: 499px;
+  min-height: 67px;
+  margin-top: 0px;
+  margin-bottom: 39px;
+  margin-left: 0px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 40px;
+  box-sizing: border-box;
   font-weight: bold;
   color: #000000;
   padding-right: 70px;
@@ -1800,7 +1829,8 @@ position: absolute;
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  top: 19px;
+  left: 3px;
 }
 .visit-data {
   font-size: 18px;
@@ -1809,18 +1839,26 @@ position: absolute;
   font-style: normal;
   color: #000000;
   width: 155px;
+  padding-top: 0px;
+  margin-left: 3px;
 }
 .visit-data-back {
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+  margin-top: 23px;
+  margin-left: 3px;
   font-style: normal;
   color: #000000;
   width: 155px;
 }
 .data-wrapper {
   position: relative;
-  padding-bottom: 11px;
+  padding-top: 6px;
+}
+.data-wrapper:nth-child(2) {
+  padding-top: 0px;
+  ma;
 }
 .calendar {
   border: none;
@@ -1832,14 +1870,14 @@ position: absolute;
   width: 15px;
   height: 15px;
   opacity: 0.6;
-  top: 18px;
-  right: 25px;
+  top: 11px;
+  right: 20px;
 }
 .calendar-2 {
   opacity: 0.6;
   position: absolute;
-  top: 19px;
-  right: 25px;
+  top: 35px;
+  right: 20px;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -1855,6 +1893,8 @@ position: absolute;
   border-radius: 4px;
   height: 50px;
   outline: none;
+  top: -6px;
+  line-height: inherit;
   display: block;
   font: inherit;
   border: 2px solid transparent;
@@ -1863,6 +1903,10 @@ position: absolute;
   box-sizing: border-box;
   cursor: pointer;
   list-style-type: none;
+}
+.two {
+  top: 16px;
+  margin-bottom: 11px;
 }
 .auth-form-field:hover {
   background: #e6e6e6;
@@ -1880,6 +1924,7 @@ position: absolute;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+  padding-top: 5px;
   font-style: normal;
   color: #000000;
   width: 155px;
@@ -1892,21 +1937,26 @@ position: absolute;
   outline: none;
   border-radius: 4px;
   background: #f2f2f2;
+  margin-left: -1px;
   border: none;
   text-align: center;
   color: #000000;
   align-items: center;
   font-weight: bold;
-  font-weight: 700;
+  font-family: 'PT Sans';
+font-style: normal;
+font-size: 18px;
+line-height: 40px;
 }
 .adults-wrapper {
   position: relative;
-  margin-right: 48px;
+  margin-right: 52px;
 }
 .children {
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+  padding-top: 5px;
   font-style: normal;
   color: #000000;
   width: 54px;
@@ -1952,10 +2002,10 @@ position: absolute;
 }
 .tooltip {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 14px;
   width: 25px;
   height: 25px;
-  left: 57px;
+  left: 54px;
 }
 .tooltip-text {
   background-color: #333333;
@@ -2002,6 +2052,10 @@ position: absolute;
   width: 575px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: 'PT Sans';
+  position: relative;
+  top: 57px;
+  left: 3px;
   outline: none;
   background-color: #83b3d3;
   border-radius: 10px;
@@ -2012,6 +2066,7 @@ position: absolute;
   line-height: 40px;
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 31px;
   box-sizing: border-box;
 }
 .to-find:hover {
@@ -2034,10 +2089,10 @@ position: absolute;
   background-image: url("../images/icons-logo/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 9px;
+  left: 12px;
   position: absolute;
   z-index: 1;
-  top: 15px;
+  top: 11px;
   height: 25px;
   width: 25px;
   opacity: 0.3;
@@ -2061,6 +2116,7 @@ position: absolute;
   appearance: none;
   margin: 0;
 }
+
 .plus {
   border: none;
   box-sizing: border-box;
@@ -2073,8 +2129,8 @@ position: absolute;
   width: 25px;
   height: 25px;
   opacity: 0.3;
-  right: 13px;
-  top: 15px;
+  right: 16px;
+  top: 12px;
 }
 .plus:hover {
   opacity: 1;
@@ -2106,8 +2162,8 @@ position: absolute;
   z-index: 1;
   opacity: 0.3;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 12px;
+  right: 15px;
 }
 .plus-children:hover {
   opacity: 1;
@@ -2135,8 +2191,8 @@ position: absolute;
   outline: none;
   position: absolute;
   opacity: 0.3;
-  top: 15px;
-  left: 10px;
+  top: 11px;
+  left: 14px;
 }
 .minus-children:hover {
   opacity: 1;
