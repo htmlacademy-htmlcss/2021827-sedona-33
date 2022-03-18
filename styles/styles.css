@@ -44,6 +44,7 @@ body {
 .wrapper {
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   min-height: 100%;
   display: flex;
@@ -634,7 +635,7 @@ body {
   width: 600px;
   height: 60px;
   background-color: #f2f2f2;
-  line-height: inherit;
+  line-height: 26px;
 }
 .form-form:hover {
   background-color: #e6e6e6;
@@ -671,8 +672,6 @@ line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-
-
 }
 .button:hover {
   background-color: #68a2ca;
@@ -1751,9 +1750,12 @@ position: absolute;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  top: -10px;
 }
 .text-error {
   padding-left: 0px;
+  margin-top: -12px;
+  height: 29px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 40px;
@@ -1769,11 +1771,12 @@ position: absolute;
   align-items: center;
   display: block;
   color: #333333;
+  height: 29px;
   font-weight: 400;
 }
 .field-group {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
@@ -1782,7 +1785,7 @@ position: absolute;
   position: absolute;
   padding: 0;
   top: 56px;
-  right: 73px;
+  right: 72px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -1811,8 +1814,8 @@ position: absolute;
   min-width: 499px;
   min-height: 67px;
   margin-top: 0px;
-  margin-bottom: 29px;
-  margin-left: -3px;
+  margin-bottom: 39px;
+  margin-left: 0px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 40px;
@@ -1826,6 +1829,8 @@ position: absolute;
   position: relative;
   display: flex;
   justify-content: space-between;
+  top: 19px;
+  left: 3px;
 }
 .visit-data {
   font-size: 18px;
@@ -1834,22 +1839,26 @@ position: absolute;
   font-style: normal;
   color: #000000;
   width: 155px;
-  padding-top: 10px;
-  margin-left: -2px;
+  padding-top: 0px;
+  margin-left: 3px;
 }
 .visit-data-back {
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
-  margin-top: -2px;
-  margin-left: -1px;
+  margin-top: 23px;
+  margin-left: 3px;
   font-style: normal;
   color: #000000;
   width: 155px;
 }
 .data-wrapper {
   position: relative;
-  padding-top: 11px;
+  padding-top: 6px;
+}
+.data-wrapper:nth-child(2) {
+  padding-top: 0px;
+  ma;
 }
 .calendar {
   border: none;
@@ -1861,14 +1870,14 @@ position: absolute;
   width: 15px;
   height: 15px;
   opacity: 0.6;
-  top: 18px;
-  right: 25px;
+  top: 11px;
+  right: 20px;
 }
 .calendar-2 {
   opacity: 0.6;
   position: absolute;
-  top: 19px;
-  right: 25px;
+  top: 35px;
+  right: 20px;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -1884,6 +1893,7 @@ position: absolute;
   border-radius: 4px;
   height: 50px;
   outline: none;
+  top: -6px;
   line-height: inherit;
   display: block;
   font: inherit;
@@ -1893,6 +1903,10 @@ position: absolute;
   box-sizing: border-box;
   cursor: pointer;
   list-style-type: none;
+}
+.two {
+  top: 16px;
+  margin-bottom: 11px;
 }
 .auth-form-field:hover {
   background: #e6e6e6;
@@ -1910,6 +1924,7 @@ position: absolute;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+  padding-top: 5px;
   font-style: normal;
   color: #000000;
   width: 155px;
@@ -1922,6 +1937,7 @@ position: absolute;
   outline: none;
   border-radius: 4px;
   background: #f2f2f2;
+  margin-left: -1px;
   border: none;
   text-align: center;
   color: #000000;
@@ -1934,12 +1950,13 @@ line-height: 40px;
 }
 .adults-wrapper {
   position: relative;
-  margin-right: 48px;
+  margin-right: 52px;
 }
 .children {
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+  padding-top: 5px;
   font-style: normal;
   color: #000000;
   width: 54px;
@@ -1985,10 +2002,10 @@ line-height: 40px;
 }
 .tooltip {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 14px;
   width: 25px;
   height: 25px;
-  left: 57px;
+  left: 54px;
 }
 .tooltip-text {
   background-color: #333333;
@@ -2036,6 +2053,9 @@ line-height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: 'PT Sans';
+  position: relative;
+  top: 57px;
+  left: 3px;
   outline: none;
   background-color: #83b3d3;
   border-radius: 10px;
@@ -2069,10 +2089,10 @@ line-height: 40px;
   background-image: url("../images/icons-logo/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  left: 9px;
+  left: 12px;
   position: absolute;
   z-index: 1;
-  top: 15px;
+  top: 11px;
   height: 25px;
   width: 25px;
   opacity: 0.3;
@@ -2096,6 +2116,7 @@ line-height: 40px;
   appearance: none;
   margin: 0;
 }
+
 .plus {
   border: none;
   box-sizing: border-box;
@@ -2108,8 +2129,8 @@ line-height: 40px;
   width: 25px;
   height: 25px;
   opacity: 0.3;
-  right: 13px;
-  top: 15px;
+  right: 16px;
+  top: 12px;
 }
 .plus:hover {
   opacity: 1;
@@ -2141,8 +2162,8 @@ line-height: 40px;
   z-index: 1;
   opacity: 0.3;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 12px;
+  right: 15px;
 }
 .plus-children:hover {
   opacity: 1;
@@ -2170,8 +2191,8 @@ line-height: 40px;
   outline: none;
   position: absolute;
   opacity: 0.3;
-  top: 15px;
-  left: 10px;
+  top: 11px;
+  left: 14px;
 }
 .minus-children:hover {
   opacity: 1;
