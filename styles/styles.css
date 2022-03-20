@@ -1704,6 +1704,10 @@ position: absolute;
 .footer-logo:hover path {
   fill: #756257;
 }
+.footer-logo:active path {
+  fill: rgba(117, 98, 87, 0.3);
+  ;
+}
 .footer-logo {
   outline: none;
 }
