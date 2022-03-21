@@ -1623,6 +1623,9 @@ position: absolute;
 .footer-social-link:active {
   opacity: 0.3;
 }
+.footer-social-link:hover path {
+  fill: #68a2ca;
+}
 /* facebook */
 .footer-social-fb {
   display: block;
